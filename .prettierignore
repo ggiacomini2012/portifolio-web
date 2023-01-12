@@ -1,0 +1,7 @@
+vite*
+node_modules
+.*
+*.test.ts
+*.config.*
+cypress/*
+*.json

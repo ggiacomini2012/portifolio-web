@@ -1,0 +1,71 @@
+traduzivel
+
+  criar um script npx no npx-scripts para usar o google tranlator e criar arquivos com os textos (ex.: intro, description) traduzidos
+  exemplo.:
+
+    se não for portuguese nem english buscar tradução no google translator e escrever as traduções no arquivo allTexts
+
+      allTexts:object = {
+        portuguese:{
+          intro: 'Olá meu nome é Guilherme'
+          description: 'Sou um programador web'
+        }
+        english:{
+          intro: 'Hello my name is Guilherme'
+          description: 'I am a web developer'
+        }
+      }
+     
+      para chinês o resultado deveria ser algo do tipo:
+
+      allTexts:object = {
+        ...
+        chinese:{
+          intro: 'Olá meu nome é Guilherme' traduzido para chines pelo google translator
+          description: 'Sou um programador web' traduzido para chines pelo google translator
+        }
+        ...
+      }
+
+      allTexts.chinese // textos em chinese
+      allTexts.portuguese // textos em portuguese
+
+
+
+
+
+
+  get default language
+  function(language: string, text: string) {
+
+    allTexts:object = {
+      portuguese:{
+        intro: 'Olá meu nome é Guilherme'
+        description: 'Sou um programador web'
+      }
+      english:{
+        intro: 'Hello my name is Guilherme'
+        description: 'I am a web developer'
+      }
+    }
+
+    return allTexts[language][text]
+  }
+
+darkmode
+  get default colorTheme
+
+  create light and dark classes
+
+  page-tag-purpose-theme: about-button-go-to-home-light or about-button-go-to-home-dark
+
+  I need double css classes... one for light and other for dark...
+
+  example: className={${string.classString}${reduxStateForTheme}}
+
+  const colorTheme = useSelector(useColorTheme); //redux state
+  example: className={${string.classProfilePictureContainer}${colorTheme}}
+
+Testar header e footer
+  cria-los
+  refatorar

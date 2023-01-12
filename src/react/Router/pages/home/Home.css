@@ -1,0 +1,30 @@
+.main-home {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.figure-container {
+  position: absolute;
+  top: 1vh;
+  left: calc(3vw + 3vh);
+}
+
+.profile-picture-container {
+  position: relative;
+}
+
+.profile-picture {
+  width: var(--image-size);
+}
+
+.fade-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--image-size);
+  height: var(--image-size);
+  box-shadow: inset 0px 0px calc(1vw + 1vh) calc(1vw + 1vh);
+}

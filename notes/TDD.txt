@@ -1,0 +1,6 @@
+What is the next step?
+  Answer
+    Right a test about it.
+    Right a solution.
+    Refactor.
+

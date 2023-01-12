@@ -1,0 +1,58 @@
+#footer {
+  /* opacity: 0; */
+  font-size: 1.8vh;
+  display: flex;
+  color: #efefef;
+  background-color: #0b0b0b;
+  height: 4vh;
+  width: 100vw;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  z-index: 10;
+}
+
+footer a {
+  display: flex;
+  text-decoration: none;
+  color: #efefef;
+  align-items: center;
+}
+
+#github-icon {
+  width: 2.5vh;
+  margin-left: 4px;
+  border-radius: 100%;
+  padding: 2px;
+  background-color: #7a6262;
+  animation: change-color 10s ease-in-out infinite;
+  filter: hue-rotate(196deg);
+}
+
+@keyframes change-color {
+  0% {
+    filter: hue-rotate(1deg);
+    transform: scale(1.1)
+  }
+
+  25% {
+    filter: hue-rotate(80deg);
+    transform: scale(1)
+  }
+
+  50% {
+    filter: hue-rotate(170deg);
+    transform: scale(1.1)
+  }
+
+  75% {
+    filter: hue-rotate(260deg);
+    transform: scale(1)
+  }
+
+  100% {
+    filter: hue-rotate(355deg);
+    transform: scale(1.1)
+  }
+}
