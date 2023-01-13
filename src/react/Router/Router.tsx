@@ -2,8 +2,8 @@ import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import About from './pages/about/About';
 import Home from './pages/home/Home';
-import ReduxPlayground from './pages/redux-playground/ReduxPlayground';
-import ReduxSibling from './pages/redux-sibling/ReduxSibling';
+import ReduxPlayground from './pages/reduxPlayground/ReduxPlayground';
+import ReduxSibling from './pages/reduxSibling/ReduxSibling';
 
 function Router() {
   return (
