@@ -15,6 +15,9 @@
   -webkit-text-size-adjust: 100%;
 
   --image-size: 30vh;
+  --60: #1D1E20;
+  --30: #F2F8F8;
+  --10: #5CF64A;
 }
 
 body {
