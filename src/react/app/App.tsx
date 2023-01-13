@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import Router from '../Router/Router';
 import store from '../state-manager/redux/store';
 import './app.css';
+import preLoad from './functions/preLoad';
 
 const root = document.getElementById('root') as HTMLElement;
 
@@ -17,14 +18,6 @@ function App() {
   );
 }
 
-setTimeout(() => {
-  ReactDOM.createRoot(root).render(
-    <App />,
-  );
-  root!.style.display = 'flex';
-}, 500);
-setTimeout(() => {
-  root!.style.opacity = '1';
-}, 1000);
+preLoad(ReactDOM, root, <App />);
 
 export default App;
