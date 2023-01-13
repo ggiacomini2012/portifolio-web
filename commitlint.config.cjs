@@ -14,7 +14,8 @@ module.exports = {
       "refactor",
       "test",
       "revert",
-      "start"
+      "start",
+      "chore"
       ]
     ]
   }
