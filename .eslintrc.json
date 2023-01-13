@@ -1,5 +1,5 @@
 {
-    "env": {
+  "env": {
     "browser": true,
     "es2021": true,
     "jest": true
@@ -48,6 +48,9 @@
         "tsx": "never"
       }
     ]
+  },
+  "globals": {
+    "JSX": true
   },
   "settings": {
     "import/resolver": {
