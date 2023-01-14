@@ -1,5 +1,7 @@
 import React from 'react';
-import './Home.css';
+import './css/desktopHome.css';
+import './css/portraitHome.css';
+import './css/landscapeHome.css';
 import guilherme from '../../../../assets/profile-picture.png';
 import Footer from '../../../global/components/footer/footer';
 

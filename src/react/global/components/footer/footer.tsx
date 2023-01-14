@@ -1,4 +1,6 @@
-import './footer.css';
+import './css/desktopFooter.css';
+import './css/portraitFooter.css';
+import './css/landscapeFooter.css';
 
 function Footer() {
   return (
