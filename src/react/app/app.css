@@ -1,4 +1,9 @@
 :root {
+  --image-size: 30vh;
+  --60: #1D1E20;
+  --30: #222325;
+  --10: #b9bec8;
+
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 100%;
   line-height: 24px;
@@ -6,7 +11,7 @@
   height: 100vh;
   width: 100vw;
 
-  background-color: #000000;
+  background-color: var(--60);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -14,10 +19,6 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  --image-size: 30vh;
-  --60: #1D1E20;
-  --30: #F2F8F8;
-  --10: #5CF64A;
 }
 
 body {

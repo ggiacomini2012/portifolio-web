@@ -3,8 +3,8 @@
 		/* opacity: 0; */
 		font-size: 1.8vh;
 		display: flex;
-		color: #efefef;
-		background-color: #0b0b0b;
+		color: var(--10);
+		background-color: var(--30);
 		height: 4vh;
 		width: 100vw;
 		position: fixed;
@@ -17,7 +17,7 @@
 	footer a {
 		display: flex;
 		text-decoration: none;
-		color: #efefef;
+		color: var(--10);
 		align-items: center;
 	}
 	
@@ -26,7 +26,7 @@
 		margin-left: 4px;
 		border-radius: 100%;
 		padding: 2px;
-		background-color: #7a6262;
+		background-color: var(--10);
 		animation: change-color 10s ease-in-out infinite;
 		filter: hue-rotate(196deg);
 	}

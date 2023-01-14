@@ -22,6 +22,6 @@
 		left: 0;
 		width: var(--image-size);
 		height: var(--image-size);
-		box-shadow: inset 0px 0px calc(1vw + 1vh) calc(1vw + 1vh) black;
+		box-shadow: inset 0px 0px calc(1vw + 1vh) calc(1vw + 1vh) var(--60);
 	}
 }
