@@ -1,5 +1,7 @@
 import React from 'react';
-import './Template.css';
+import './css/desktopTemplate.css';
+import './css/portraitTemplate.css';
+import './css/landscapeTemplate.css';
 // import globalString from '../../constants/strings';
 // import s from './constants/strings';
 
