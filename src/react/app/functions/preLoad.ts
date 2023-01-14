@@ -7,8 +7,8 @@ export default (react: TReactDom, root: HTMLElement, app: JSX.Element) => {
       app,
     );
   rootExtractor!.style.display = 'flex';
-  }, 500);
+  }, 300);
   setTimeout(() => {
   rootExtractor!.style.opacity = '1';
-  }, 1000);
+  }, 600);
 };
