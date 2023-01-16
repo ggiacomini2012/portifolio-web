@@ -15,7 +15,8 @@ module.exports = {
       "test",
       "revert",
       "start",
-      "chore"
+      "chore",
+      "build"
       ]
     ]
   }
