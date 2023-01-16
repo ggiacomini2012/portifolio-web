@@ -69,3 +69,19 @@ darkmode
 Testar header e footer
   cria-los
   refatorar
+
+Estamos no momento de criar as strings que se traduzem
+criar o redux de languages
+criar funcao que recebe o reduxState language ex.: ('english' como redux, 'template' como chave do allLanguages.english)
+quem devolve as strings é a funcao(languageState, globalString.text.developerName ) {
+  const text = globalString.text.developerName;
+  return globalString[language][text]
+}
+
+
+© 2023 by Guilherme Giacomini Teixeira
+
+npm un  puppeteer
+npm un  @types/node
+npm un  events
+npm un -D puppeteer-tsd
