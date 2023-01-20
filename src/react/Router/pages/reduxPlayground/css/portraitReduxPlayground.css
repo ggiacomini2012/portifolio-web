@@ -1,0 +1,27 @@
+@media (max-aspect-ratio: 13/9) AND (pointer: coarse) {
+	.redux-playground-container-dark, .redux-playground-container-light {
+		background-color: var(--60-dark-theme);
+		width: 100%;
+		height: calc(100% - var(--header-footer-height));
+		margin-top: var(--header-height);
+		margin-bottom: var(--footer-height);
+		opacity: 0;
+		transition: all 0.5s ease-in-out;
+	}
+	.redux-playground-container-light {
+		background-color: var(--60-light-theme);
+	}
+
+	.fade-in {
+		opacity: 1;
+	}
+
+	.redux-playground-intro-dark, .redux-playground-intro-light {
+		padding: 7%;
+		color: var(--10-dark-theme);
+		font-size: 2rem;
+	}
+	.redux-playground-intro-light {
+		color: var(--10-light-theme);
+	}
+}

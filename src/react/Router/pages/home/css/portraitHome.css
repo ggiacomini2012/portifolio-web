@@ -1,27 +1,79 @@
 @media (max-aspect-ratio: 13/9) AND (pointer: coarse) {
-	.main-home {
+	.main-home-dark, .main-home-light {
 		display: flex;
 		flex-direction: column;
 		width: 100%;
-		height: 100%;
+		height: calc(100% - var(--header-footer-height));
+		margin-top: var(--header-height);
+		margin-bottom: var(--footer-height);
 		align-items: center;
-		color: white;
+		background-color: var(--60-dark-theme);
+		color: var(--10-dark-theme);
+		transition: all ease-in-out 0.5s;
+		opacity: 0;
+		/* padding: 2vh; */
 	}
-	
-	.profile-picture-container {
+	.main-home-light {
+		background-color: var(--60-light-theme);
+		color: var(--10-light-theme);
+	}
+
+	.fade-in {
+		opacity: 1;
+	}
+
+	.introduction-container-dark, .introduction-container-light {
+		margin: 1vh 4vh;
+		/* color: var(--10-dark-theme); */
+	}
+	/* .introduction-container-light {
+		color: var(--10-light-theme);
+	} */
+
+	.introduction-dark, .introduction-light {
+		text-align: center;
+    width: 70vw;
+    line-height: 5vh;
+    font-size: var(--font-size);
+   	color: var(--10-dark-theme);
+	}
+	.introduction-light {
+		color: var(--10-light-theme);
+	}
+
+	.figure-container-dark, .figure-container-light {
+		width: var(--image-size);
+		height: var(--image-size);
 		position: relative;
 	}
 	
-	.profile-picture {
+	.profile-picture-container-dark, .profile-picture-container-light {
+		margin: 0;
 		width: var(--image-size);
+		height: var(--image-size);
+		position: relative;
 	}
-	
-	.fade-effect {
+
+	.profile-picture-dark, .profile-picture-light {
+		width: var(--image-size);
+		height: var(--image-size);
+	}
+
+	.fade-effect-dark, .fade-effect-light {
 		position: absolute;
 		top: 0;
 		left: 0;
 		width: var(--image-size);
 		height: var(--image-size);
-		box-shadow: inset 0px 0px calc(1vw + 1vh) calc(1vw + 1vh) var(--60);
+		transition: all ease-in-out 0.5s;
+		box-shadow: inset 0px 0px calc(1vw + 1vh) calc(1vw + 1vh) var(--60-dark-theme),
+		inset 0px 0px calc(1vw + 1vh) calc(1vw + 1vh) var(--60-dark-theme),
+		0px 0px calc(1vw + 1vh) calc(1vw + 1vh) var(--60-dark-theme);
 	}
+	.fade-effect-light {
+		box-shadow: inset 0px 0px calc(1vw + 1vh) calc(1vw + 1vh) var(--60-light-theme),
+		inset 0px 0px calc(1vw + 1vh) calc(1vw + 1vh) var(--60-light-theme),
+		0px 0px calc(1vw + 1vh) calc(1vw + 1vh) var(--60-light-theme);
+	}
+
 }

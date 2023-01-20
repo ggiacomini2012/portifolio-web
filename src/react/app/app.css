@@ -1,17 +1,28 @@
 :root {
-  --image-size: 30vh;
-  --60: #1D1E20;
-  --30: #222325;
-  --10: #b9bec8;
+  --image-size: calc(19vh + 19vw);
+
+  --header-height: 5vh;
+  --footer-height: 5vh;
+  --header-footer-height: calc(var(--footer-height) + (var(--header-height)));
+  --font-size: calc(1.5vh + 1.5vw);
+
+  --60-light-theme: #e7e7e6;
+  --30-light-theme: #d7d5d4;
+  --10-light-theme: #595347;
+
+  --60-dark-theme: #1e1e20;
+  --30-dark-theme: #222325;
+  --10-dark-theme: #b9bec8;
+
 
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 100%;
+  font-size: 62.5%;
   line-height: 24px;
   font-weight: 400;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
 
-  background-color: var(--60);
+  background-color: var(--60-dark-theme);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -23,10 +34,14 @@
 
 body {
   margin: 0;
+  height: 100%;
+  width: 100%;
 }
 
-#root {
+.root {
   display: none;
   opacity: 0;
-  transition: all 2s ease-in-out;
+  height: 100%;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
 }

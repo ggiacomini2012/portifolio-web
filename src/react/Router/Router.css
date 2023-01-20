@@ -1,0 +1,8 @@
+.router-dark, .router-light {
+  width: 100%;
+  height: 100%;
+  background-color: var(--60-dark-theme);
+}
+.router-light {
+  background-color: var(--60-light-theme);
+}
