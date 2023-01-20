@@ -1,6 +1,4 @@
-type TReactDom = typeof import('/Users/guilherme/Desktop/trabalho-e-estudo/portifolio/portifolio-web/node_modules/@types/react-dom/client')
-
-export default (react: TReactDom, root: HTMLElement, app: JSX.Element) => {
+export default (react: any, root: HTMLElement, app: JSX.Element) => {
   const rootExtractor = root;
   setTimeout(() => {
     react.createRoot(root).render(
