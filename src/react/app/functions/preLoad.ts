@@ -10,5 +10,5 @@ export default (react: TReactDom, root: HTMLElement, app: JSX.Element) => {
   }, 300);
   setTimeout(() => {
   rootExtractor!.style.opacity = '1';
-  }, 600);
+  }, 1500);
 };
