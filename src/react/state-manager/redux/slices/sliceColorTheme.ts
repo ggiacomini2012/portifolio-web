@@ -20,10 +20,10 @@ const sliceColorTheme = createSlice({
       return state.map((stateElement) => (stateElement.chooseColorTheme
         ? {
           chooseColorTheme: false,
-          colorTheme: 'darkMode',
+          colorTheme: 'lightMode',
         } : {
           chooseColorTheme: true,
-          colorTheme: 'lightMode',
+          colorTheme: 'darkMode',
         }));
     },
   },
