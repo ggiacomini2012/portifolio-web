@@ -3,7 +3,7 @@
 
   --header-height: 5vh;
   --footer-height: 5vh;
-  --header-footer-height: calc(var(--footer-height) + (var(--header-height)));
+  --header-footer-height: calc(var(--footer-height) + var(--header-height) - 0.1vh);
   --font-size: calc(1.5vh + 1.5vw);
 
   --60-light-theme: #e7e7e6;
