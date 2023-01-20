@@ -11,7 +11,7 @@ describe('Home tests:', () => {
   });
 
   test('1 - Has the Developer name on it:', () => {
-    expect(screen.getByText(globalString.developerName)).toBeInTheDocument();
+    expect(screen.getAllByText(new RegExp(globalString.developerName, 'i'))[0]).toBeInTheDocument();
   });
 
   test('2 - Has a footer with data-testid="footer":', () => {
@@ -20,5 +20,10 @@ describe('Home tests:', () => {
 
   test('3 - Has a developer image or logo with data-testid="profile-picture-container":', () => {
     expect(screen.getByTestId('profile-picture-container')).toBeInTheDocument();
+  });
+
+  test(`4 - Has the text "${globalString.english.intro}" data-testid="introduction":`, () => {
+    expect(screen.getByTestId('introduction')).toBeInTheDocument();
+    expect(screen.getByText(globalString.english.intro)).toBeInTheDocument();
   });
 });

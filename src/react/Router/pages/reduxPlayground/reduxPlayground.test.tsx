@@ -7,6 +7,6 @@ import globalString from '../../../global/constants/strings/globalStrings';
 describe('ReduxPlayground tests:', () => {
   test('learning tests', () => {
     render(<ReduxPlayground />);
-    expect(screen.getByText(globalString.developerName)).toBeInTheDocument();
+    expect(screen.getByText(globalString.english.intro)).toBeInTheDocument();
   });
 });
