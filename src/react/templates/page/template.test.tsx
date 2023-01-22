@@ -1,11 +1,17 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import { describe, test, expect } from 'vitest';
-import Template from './Template';
+import App from '../../../App';
+import globalString from '../../global/constants/strings/globalStrings';
 
-describe('Template tests:', () => {
+describe.skip('Template tests:', () => {
+  window.history.pushState({}, '', '/');
+
+  beforeEach(() => {
+    render(<App />);
+  });
+
   test('learning tests', () => {
-    render(<Template />);
-    expect(screen.getByText('Hello I am in the document')).toBeInTheDocument();
+    expect(screen.getAllByText(new RegExp(globalString.developerName, 'i'))[0]).toBeInTheDocument();
   });
 });

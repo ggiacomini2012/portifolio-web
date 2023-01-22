@@ -1,13 +1,16 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import { describe, test, expect } from 'vitest';
-import About from './About';
-import globalString from '../../../global/constants/strings/globalStrings';
+import App from '../../../../App';
 
 describe('About tests:', () => {
+  window.history.pushState({}, '', '/about');
+
+  beforeEach(() => {
+    render(<App />);
+  });
+
   test('learning tests', () => {
-    render(<About />);
-    expect(screen.getByText(globalString.developerName)).toBeInTheDocument();
-    expect(2).toBe(3);
+    expect(screen.getByText('Hello I am the about page!')).toBeInTheDocument();
   });
 });

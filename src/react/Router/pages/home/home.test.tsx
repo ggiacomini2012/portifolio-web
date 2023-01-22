@@ -1,13 +1,16 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import { describe, test, expect } from 'vitest';
-import { BrowserRouter } from 'react-router-dom';
-import Home from './Home';
+// import { BrowserRouter } from 'react-router-dom';
+// import Home from './Home';
+import App from '../../../../App';
 import globalString from '../../../global/constants/strings/globalStrings';
 
 describe('Home tests:', () => {
+  window.history.pushState({}, '', '/');
+
   beforeEach(() => {
-    render(<Home />, { wrapper: BrowserRouter });
+    render(<App />);
   });
 
   test('1 - Has the Developer name on it:', () => {
