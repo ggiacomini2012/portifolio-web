@@ -1,31 +1,22 @@
-traduzivel
+fazer os testes antes:
 
-  criar um script npx no npx-scripts para usar o google tranlator e criar arquivos com os textos (ex.: intro, description) traduzidos
-  exemplo.:
+checar se no router existe:
+  page contact
+  page home
+  page about
 
-    se não for portuguese nem english buscar tradução no google translator e escrever as traduções no arquivo allTexts
+chegar se no header exitem os botoes e select:
+  home about contact selectLanguage colorTheme
 
-      allTexts:object = {
-        portuguese:{
-          intro: 'Olá meu nome é Guilherme'
-          description: 'Sou um programador web'
-        }
-        english:{
-          intro: 'Hello my name is Guilherme'
-          description: 'I am a web developer'
-        }
-      }
-     
-      para chinês o resultado deveria ser algo do tipo:
+checar se no home existe:
+  uma imagem
 
-      allTexts:object = {
-        ...
-        chinese:{
-          intro: 'Olá meu nome é Guilherme' traduzido para chines pelo google translator
-          description: 'Sou um programador web' traduzido para chines pelo google translator
-        }
-        ...
-      }
+checar se no footer existe texto e imagem
 
-      allTexts.chinese // textos em chinese
-      allTexts.portuguese // textos em portuguese
+redux to contact
+  renomear a pagina redux para contact
+
+adicionar traducao para os botoes
+adicionar texto traduzivel no about
+
+
