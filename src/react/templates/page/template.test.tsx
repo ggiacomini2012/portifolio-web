@@ -11,7 +11,7 @@ describe.skip('Template tests:', () => {
     render(<App />);
   });
 
-  test('learning tests', () => {
+  test('...Work in Progress...', () => {
     expect(screen.getAllByText(new RegExp(globalString.developerName, 'i'))[0]).toBeInTheDocument();
   });
 });
