@@ -1,22 +1,24 @@
-fazer os testes antes:
+testes:
+  fazer os testes antes:
 
-checar se no router existe:
-  page contact
-  page home
-  page about
+  checar se no router existe:
+    page contact
+    page home
+    page about
 
-chegar se no header exitem os botoes e select:
-  home about contact selectLanguage colorTheme
+  chegar se no header exitem os botoes e select:
+    home about contact selectLanguage colorTheme
 
-checar se no home existe:
-  uma imagem
+  checar se no home existe:
+    uma imagem
 
-checar se no footer existe texto e imagem
+  checar se no footer existe texto e imagem
 
-redux to contact
-  renomear a pagina redux para contact
+Renomear:
+  redux to contact
+    renomear a pagina redux para contact
 
-adicionar traducao para os botoes
-adicionar texto traduzivel no about
+  adicionar traducao para os botoes
+  adicionar texto traduzivel no about
 
 
