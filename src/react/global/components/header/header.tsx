@@ -4,9 +4,7 @@ import './css/landscapeHeader.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { changeLanguage, useLanguage } from '../../../state-manager/redux/slices/sliceLanguage';
-import {
-  useColorTheme,
-} from '../../../state-manager/redux/slices/sliceColorTheme';
+import { useColorTheme } from '../../../state-manager/redux/slices/sliceColorTheme';
 import functions from '../../functions';
 import ColorTheme from './components/colorThemeButton/colorTheme';
 
@@ -27,8 +25,8 @@ function Header() {
       <button className={`about-button${theme}`} type="button" onClick={() => goTo('/about')}>
         about
       </button>
-      <button className={`redux-button${theme}`} type="button" onClick={() => goTo('/redux-playground')}>
-        redux
+      <button className={`contact-button${theme}`} type="button" onClick={() => goTo('/contact')}>
+        contact
       </button>
       <select
         name="select"
