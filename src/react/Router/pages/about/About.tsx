@@ -17,13 +17,13 @@ function About() {
   functions.languageSelector(languageState.toTranlate, '');
 
   useEffect(() => {
-    functions.fadeIn('about-page');
+    functions.fadeIn('about');
   }, []);
 
   return (
     <>
       <Header />
-      <main id="about-page" className={`about-page${theme} fade-in`}>
+      <main id="about" data-testid="about" className={`about${theme} fade-in`}>
         <h1 className={`about-myself${theme}`}>
           Hello I am the about page!
         </h1>

@@ -18,13 +18,13 @@ function Home() {
   const theme = functions.colorThemeSelector(themeState.colorTheme);
 
   useEffect(() => {
-    functions.fadeIn('main-home');
+    functions.fadeIn('home');
   }, []);
 
   return (
     <>
       <Header />
-      <main id="main-home" className={`main-home${theme} fade-in`}>
+      <main id="home" data-testid="home" className={`home${theme} fade-in`}>
         <section className={`figure-container${theme}`}>
           <figure data-testid="profile-picture-container" id="profile-picture-container" className={`profile-picture-container${theme}`}>
             <img src={guilherme} alt="guilherme profile" className={`profile-picture${theme}`} />

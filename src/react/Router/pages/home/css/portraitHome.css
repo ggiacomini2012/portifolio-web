@@ -1,5 +1,5 @@
 @media (max-aspect-ratio: 13/9) AND (pointer: coarse) {
-	.main-home-dark, .main-home-light {
+	.home-dark, .home-light {
 		display: flex;
 		flex-direction: column;
 		width: 100%;
@@ -11,9 +11,10 @@
 		color: var(--10-dark-theme);
 		transition: all ease-in-out 0.5s;
 		opacity: 0;
+		box-sizing: border-box;
 		/* padding: 2vh; */
 	}
-	.main-home-light {
+	.home-light {
 		background-color: var(--60-light-theme);
 		color: var(--10-light-theme);
 	}

@@ -25,8 +25,8 @@
 	.home-button-light,
 	.about-button-dark,
 	.about-button-light,
-	.redux-button-dark,
-	.redux-button-light {
+	.contact-button-dark,
+	.contact-button-light {
 		font-size: 1.2rem;
 		color: var(--10-dark-theme);
 		background-color: var(--30-dark-theme);
@@ -40,7 +40,7 @@
 
 	.home-button-light,
 	.about-button-light,
-	.redux-button-light {
+	.contact-button-light {
 		color: var(--10-light-theme);
 		background-color: var(--30-light-theme);
 	}
