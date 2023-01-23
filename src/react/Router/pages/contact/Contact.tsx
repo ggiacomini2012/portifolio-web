@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { useSelector } from 'react-redux';
-import './css/desktopReduxPlayground.css';
-import './css/portraitReduxPlayground.css';
-import './css/landscapeReduxPlayground.css';
+import './css/desktopContact.css';
+import './css/portraitContact.css';
+import './css/landscapeContact.css';
 import { useLanguage } from '../../../state-manager/redux/slices/sliceLanguage';
 import functions from '../../../global/functions';
 import globalStrings from '../../../global/constants/strings/globalStrings';
@@ -10,7 +10,7 @@ import Footer from '../../../global/components/footer/footer';
 import Header from '../../../global/components/header/header';
 import { useColorTheme } from '../../../state-manager/redux/slices/sliceColorTheme';
 
-function ReduxPlayground() {
+function Contact() {
   const [languageState] = useSelector(useLanguage);
   const [themeState] = useSelector(useColorTheme);
 
@@ -18,20 +18,18 @@ function ReduxPlayground() {
   const translator = (text: any) => functions.languageSelector(languageState.toTranlate, text);
 
   useEffect(() => {
-    functions.fadeIn('redux-playground');
+    functions.fadeIn('contact');
   }, []);
 
   return (
     <>
       <Header />
-      <main id="redux-playground" className={`redux-playground-container${theme} fade-in`}>
-        <h1 className={`redux-playground-intro${theme}`}>
-          {translator(globalStrings.text.intro)}
-        </h1>
+      <main id="contact" data-testid="contact" className={`contact-container${theme} fade-in`}>
+        <h1 className={`contact-intro${theme}`}>{translator(globalStrings.text.intro)}</h1>
       </main>
       <Footer />
     </>
   );
 }
 
-export default ReduxPlayground;
+export default Contact;

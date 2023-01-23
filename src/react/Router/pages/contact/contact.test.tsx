@@ -1,17 +1,22 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import { describe, test, expect } from 'vitest';
+import { BrowserRouter } from 'react-router-dom';
 import globalString from '../../../global/constants/strings/globalStrings';
 import App from '../../../../App';
 
-describe('ReduxPlayground tests:', () => {
-  window.history.pushState({}, '', '/redux-playground');
+describe('Contact tests:', () => {
+  window.history.pushState({}, '', '/contact');
 
   beforeEach(() => {
-    render(<App />);
+    render(
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>,
+    );
   });
 
-  test('learning tests', () => {
+  test('...Work in Progress...', () => {
     expect(screen.getByText(globalString.english.intro)).toBeInTheDocument();
   });
 });

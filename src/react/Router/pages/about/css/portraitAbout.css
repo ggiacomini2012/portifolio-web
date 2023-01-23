@@ -1,5 +1,5 @@
 @media (max-aspect-ratio: 13/9) AND (pointer: coarse) {
-	.about-page-dark, .about-page-light {
+	.about-dark, .about-light {
 		background-color: var(--60-dark-theme);
 		width: 100%;
 		height: calc(100% - var(--header-footer-height));
@@ -7,8 +7,9 @@
 		margin-bottom: var(--footer-height);
 		opacity: 0;
 		transition: all 0.5s ease-in-out;
+		box-sizing: border-box;
 	}
-	.about-page-light {
+	.about-light {
 		background-color: var(--60-light-theme);
 	}
 
