@@ -32,9 +32,4 @@ describe('Home tests:', () => {
     expect(screen.getByTestId('introduction')).toBeInTheDocument();
     expect(screen.getByText(globalString.english.intro)).toBeInTheDocument();
   });
-
-  test(`5 - Has the text "${globalString.english.intro}" data-testid="introduction":`, () => {
-    expect(screen.getByTestId('introduction')).toBeInTheDocument();
-    expect(screen.getByText(globalString.english.intro)).toBeInTheDocument();
-  });
 });
