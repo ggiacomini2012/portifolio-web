@@ -1,18 +1,20 @@
 testes:
   fazer os testes antes:
 
-  checar se no router existe:
-    page contact
-    page home
-    page about
-
+  checar se no router existe: ✅
+    page contact ✅
+    page home ✅
+    page about ✅
+ 
   chegar se no header exitem os botoes e select:
     home about contact selectLanguage colorTheme
 
+  checar se no footer existe texto e imagem
+  
   checar se no home existe:
     uma imagem
 
-  checar se no footer existe texto e imagem
+  checar se no home existe:
 
 Renomear:
   redux to contact
