@@ -11,7 +11,7 @@ function ColorTheme() {
   const [themeState] = useSelector(useColorTheme);
   const theme = functions.colorThemeSelector(themeState.colorTheme);
   return (
-    <button className={`button-moon-sun${theme}`} type="button" onClick={() => dispatch(changeColorTheme())}>
+    <button data-testid="button-moon-sun" className={`button-moon-sun${theme}`} type="button" onClick={() => dispatch(changeColorTheme())}>
       <section className={`moon-sun-container${theme}`}>
         <svg className={`svg-moon${theme}`} version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 422 381" width="422" height="381">
           <symbol id="image-2be905d444e78bfe257ac2c1c9aea9d33ac4e58f">

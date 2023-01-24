@@ -18,19 +18,20 @@ function Header() {
   functions.languageSelector(languageState.toTranlate, '');
 
   return (
-    <header id="header" className={`header${theme}`}>
-      <button className={`home-button${theme}`} type="button" onClick={() => goTo('/')}>
+    <header id="header" data-testid="header" className={`header${theme}`}>
+      <button data-testid="home-button" className={`home-button${theme}`} type="button" onClick={() => goTo('/')}>
         home
       </button>
-      <button className={`about-button${theme}`} type="button" onClick={() => goTo('/about')}>
+      <button data-testid="about-button" className={`about-button${theme}`} type="button" onClick={() => goTo('/about')}>
         about
       </button>
-      <button className={`contact-button${theme}`} type="button" onClick={() => goTo('/contact')}>
+      <button data-testid="contact-button" className={`contact-button${theme}`} type="button" onClick={() => goTo('/contact')}>
         contact
       </button>
       <select
         name="select"
         value={languageState.toTranlate}
+        data-testid="select-language-button"
         className={`select-language${theme}`}
         onChange={(e) => dispatch(changeLanguage(e.target.value))}
       >
