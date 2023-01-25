@@ -10,7 +10,7 @@ const queryLanguageText = (
 const selectLanguage = (selectedLanguage: any, selectedText: any) => {
   const language = selectedLanguage as unknown as keyof Interface.IAllLanguages;
   const text = selectedText as keyof Interface.ITexts;
-  if (language === 'english' || language === 'portuguese') {
+  if (language === 'english' || language === 'português') {
     return queryLanguageText(language, text);
   }
   return functions.translator(language, text);

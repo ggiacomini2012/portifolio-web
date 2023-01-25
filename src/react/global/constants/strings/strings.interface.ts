@@ -1,12 +1,17 @@
 interface ITexts {
   intro: string;
   by: string;
+  home: string;
+  about: string;
+  aboutDescription: string;
+  contact: string;
+  contactDescription: string;
 }
 
 interface IAllLanguages {
   text: ITexts;
   english: ITexts;
-  portuguese: ITexts;
+  português: ITexts;
 }
 
 interface IAllColorThemes {

@@ -8,13 +8,14 @@ import { useLanguage } from '../../../state-manager/redux/slices/sliceLanguage';
 import './css/desktopAbout.css';
 import './css/portraitAbout.css';
 import './css/landscapeAbout.css';
+import globalStrings from '../../../global/constants/strings/globalStrings';
 
 function About() {
   const [languageState] = useSelector(useLanguage);
   const [themeState] = useSelector(useColorTheme);
 
   const theme = functions.colorThemeSelector(themeState.colorTheme);
-  functions.languageSelector(languageState.toTranlate, '');
+  const translator = (text: any) => functions.languageSelector(languageState.toTranlate, text);
 
   useEffect(() => {
     functions.fadeIn('about');
@@ -25,7 +26,7 @@ function About() {
       <Header />
       <main id="about" data-testid="about" className={`about${theme} fade-in`}>
         <h1 className={`about-myself${theme}`}>
-          Hello I am the about page!
+          {translator(globalStrings.text.aboutDescription)}
         </h1>
       </main>
       <Footer />

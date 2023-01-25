@@ -7,6 +7,7 @@ import { changeLanguage, useLanguage } from '../../../state-manager/redux/slices
 import { useColorTheme } from '../../../state-manager/redux/slices/sliceColorTheme';
 import functions from '../../functions';
 import ColorTheme from './components/colorThemeButton/colorTheme';
+import globalStrings from '../../constants/strings/globalStrings';
 
 function Header() {
   const goTo = useNavigate();
@@ -15,18 +16,18 @@ function Header() {
   const [themeState] = useSelector(useColorTheme);
 
   const theme = functions.colorThemeSelector(themeState.colorTheme);
-  functions.languageSelector(languageState.toTranlate, '');
+  const translator = (text: any) => functions.languageSelector(languageState.toTranlate, text);
 
   return (
     <header id="header" data-testid="header" className={`header${theme}`}>
       <button data-testid="home-button" className={`home-button${theme}`} type="button" onClick={() => goTo('/')}>
-        home
+        {translator(globalStrings.text.home)}
       </button>
       <button data-testid="about-button" className={`about-button${theme}`} type="button" onClick={() => goTo('/about')}>
-        about
+        {translator(globalStrings.text.about)}
       </button>
       <button data-testid="contact-button" className={`contact-button${theme}`} type="button" onClick={() => goTo('/contact')}>
-        contact
+        {translator(globalStrings.text.contact)}
       </button>
       <select
         name="select"
@@ -36,7 +37,7 @@ function Header() {
         onChange={(e) => dispatch(changeLanguage(e.target.value))}
       >
         <option value="english">english</option>
-        <option value="portuguese">portuguese</option>
+        <option value="português">português</option>
       </select>
       <ColorTheme />
     </header>

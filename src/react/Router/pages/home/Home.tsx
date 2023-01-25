@@ -16,6 +16,7 @@ function Home() {
   const [themeState] = useSelector(useColorTheme);
 
   const theme = functions.colorThemeSelector(themeState.colorTheme);
+  const translator = (text: any) => functions.languageSelector(languageState.toTranlate, text);
 
   useEffect(() => {
     functions.fadeIn('home');
@@ -33,7 +34,7 @@ function Home() {
         </section>
         <section data-testid="introduction" className={`introduction-container${theme}`}>
           <h1 className={`introduction${theme}`}>
-            {functions.languageSelector(languageState.toTranlate, globalStrings.text.intro)}
+            {translator(globalStrings.text.intro)}
           </h1>
         </section>
       </main>
