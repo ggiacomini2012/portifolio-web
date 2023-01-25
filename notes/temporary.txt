@@ -21,8 +21,8 @@ Renomear:
   redux to contact✅
     renomear a pagina redux para contact✅
 
-adicionar traducao para os botoes
-adicionar texto traduzivel no about
+adicionar traducao para os botoes ✅
+adicionar texto traduzivel no about ✅
 
 Antes fazer os testes
 o scroll será um componente do home
