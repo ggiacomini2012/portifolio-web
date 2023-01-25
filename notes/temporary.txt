@@ -6,21 +6,29 @@ testes:
     page home ✅
     page about ✅
  
-  chegar se no header exitem os botoes e select:
-    home about contact selectLanguage colorTheme
+  chegar se no header exitem os botoes e select: ✅
+    home about contact selectLanguage colorTheme ✅
 
-  checar se no footer existe texto e imagem
+  checar se no footer existe texto e imagem ✅
   
   checar se no home existe:
-    uma imagem
-
-  checar se no home existe:
-
+    uma imagem 
+    uma texto
+    uma se o tema de cor muda
+    uma se o texto traduz
+ 
 Renomear:
-  redux to contact
-    renomear a pagina redux para contact
+  redux to contact✅
+    renomear a pagina redux para contact✅
 
-  adicionar traducao para os botoes
-  adicionar texto traduzivel no about
+adicionar traducao para os botoes
+adicionar texto traduzivel no about
+
+Antes fazer os testes
+o scroll será um componente do home
+adicionar scroll horizontal com uma flecha lateral que ao começar a scrollar desaparece
+  Neste scroll terão cards com git de cada projeto link para o github e like para o deploy
+
+
 
 
