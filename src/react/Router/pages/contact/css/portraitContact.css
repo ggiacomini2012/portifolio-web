@@ -22,6 +22,7 @@
 
 	.contact-intro-dark,
 	.contact-intro-light {
+		text-align: center;
 		padding: 7%;
 		color: var(--10-dark-theme);
 		font-size: 2rem;
