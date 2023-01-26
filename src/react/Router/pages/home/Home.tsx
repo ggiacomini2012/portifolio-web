@@ -11,12 +11,18 @@ import { useLanguage } from '../../../state-manager/redux/slices/sliceLanguage';
 import Header from '../../../global/components/header/header';
 import { useColorTheme } from '../../../state-manager/redux/slices/sliceColorTheme';
 
+const homeVariables = {
+  translator: (text: any) => text,
+};
+
 function Home() {
   const [languageState] = useSelector(useLanguage);
   const [themeState] = useSelector(useColorTheme);
 
   const theme = functions.colorThemeSelector(themeState.colorTheme);
   const translator = (text: any) => functions.languageSelector(languageState.toTranlate, text);
+
+  homeVariables.translator = translator;
 
   useEffect(() => {
     functions.fadeIn('home');
@@ -33,7 +39,7 @@ function Home() {
           </figure>
         </section>
         <section data-testid="introduction" className={`introduction-container${theme}`}>
-          <h1 className={`introduction${theme}`}>
+          <h1 data-testid="introduction-text" className={`introduction${theme}`}>
             {translator(globalStrings.text.intro)}
           </h1>
         </section>
@@ -42,5 +48,7 @@ function Home() {
     </>
   );
 }
+
+export { homeVariables };
 
 export default Home;

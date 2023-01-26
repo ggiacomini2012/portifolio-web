@@ -1,12 +1,17 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import {
+  cleanup, fireEvent, render, screen,
+} from '@testing-library/react';
 import { describe, test, expect } from 'vitest';
 import { BrowserRouter } from 'react-router-dom';
 import App from '../../../../App';
-import globalString from '../../../global/constants/strings/globalStrings';
+import globalStrings from '../../../global/constants/strings/globalStrings';
+// import { homeVariables } from './Home';
 
 describe('Home tests:', () => {
   window.history.pushState({}, '', '/');
+
+  afterEach(cleanup);
 
   beforeEach(() => {
     render(
@@ -17,7 +22,7 @@ describe('Home tests:', () => {
   });
 
   test('1 - Has the Developer name on it:', () => {
-    expect(screen.getAllByText(new RegExp(globalString.developerName, 'i'))[0]).toBeInTheDocument();
+    expect(screen.getAllByText(new RegExp(globalStrings.developerName, 'i'))[0]).toBeInTheDocument();
   });
 
   test('2 - Has a footer with data-testid="footer":', () => {
@@ -28,8 +33,13 @@ describe('Home tests:', () => {
     expect(screen.getByTestId('profile-picture-container')).toBeInTheDocument();
   });
 
-  test(`4 - Has the text "${globalString.english.intro}" data-testid="introduction":`, () => {
+  test(`4 - Has the text "${globalStrings.english.intro}" data-testid="introduction":`, () => {
     expect(screen.getByTestId('introduction')).toBeInTheDocument();
-    expect(screen.getByText(globalString.english.intro)).toBeInTheDocument();
+    expect(screen.getByText(globalStrings.english.intro)).toBeInTheDocument();
+  });
+
+  test(`5 - Has the text "${globalStrings.português.intro}" when "português" is selected in data-testid="select-language-button":`, () => {
+    fireEvent.change(screen.getByTestId('select-language-button'), { target: { value: 'português' } });
+    expect(screen.getByTestId('introduction-text')).toHaveTextContent(globalStrings.português.intro);
   });
 });
