@@ -14,7 +14,7 @@ testes:
   checar se no home existe:
     uma imagem 
     uma texto
-    uma se o tema de cor muda
+    uma se o tema de cor muda: cypress
     uma se o texto traduz
  
 Renomear:
