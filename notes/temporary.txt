@@ -11,11 +11,11 @@ testes:
 
   checar se no footer existe texto e imagem ✅
   
-  checar se no home existe:
-    uma imagem 
-    uma texto
-    uma se o tema de cor muda: cypress
-    uma se o texto traduz
+  checar se no home existe:✅
+    uma imagem ✅
+    uma texto✅
+    uma se o tema de cor muda: cypress✅
+    uma se o texto traduz✅
  
 Renomear:
   redux to contact✅
