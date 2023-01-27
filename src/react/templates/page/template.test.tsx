@@ -1,6 +1,7 @@
 import React from 'react';
 import { cleanup, render, screen } from '@testing-library/react';
 import { describe, test, expect } from 'vitest';
+import { BrowserRouter } from 'react-router-dom';
 import App from '../../../App';
 import globalString from '../../global/constants/strings/globalStrings';
 
@@ -10,7 +11,11 @@ describe.skip('Template tests:', () => {
   afterEach(cleanup);
 
   beforeEach(() => {
-    render(<App />);
+    render(
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>,
+    );
   });
 
   test.skip('...Work in Progress...', () => {
