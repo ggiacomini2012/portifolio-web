@@ -1,4 +1,7 @@
-@media (max-aspect-ratio: 13/9) AND (pointer: coarse) {
+@media (max-aspect-ratio: 13/9)
+
+/* AND (pointer: coarse)  */
+	{
 	#template {
 		background-color: blue;
 	}

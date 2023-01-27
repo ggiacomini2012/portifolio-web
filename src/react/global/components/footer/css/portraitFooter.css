@@ -1,6 +1,11 @@
-@media (max-aspect-ratio: 13/9) AND (pointer: coarse) {
-	.footer-dark, .footer-light {
-		font-size: 1.5rem;
+@media (max-aspect-ratio: 13/9)
+
+/* AND (pointer: coarse)  */
+	{
+
+	.footer-dark,
+	.footer-light {
+		font-size: var(--footer-font);
 		display: flex;
 		color: var(--10-dark-theme);
 		background-color: var(--30-dark-theme);
@@ -13,22 +18,26 @@
 		z-index: 10;
 		transition: all 0.5s ease-in-out;
 	}
+
 	.footer-light {
 		color: var(--10-light-theme);
 		background-color: var(--30-light-theme);
 	}
 
-	.footer-link-dark, .footer-link-light {
+	.footer-link-dark,
+	.footer-link-light {
 		display: flex;
 		text-decoration: none;
 		color: var(--10-dark-theme);
 		align-items: center;
 	}
+
 	.footer-link-light {
 		color: var(--10-light-theme);
 	}
 
-	.github-icon-dark, .github-icon-light {
+	.github-icon-dark,
+	.github-icon-light {
 		width: 2.5vh;
 		margin-left: 4px;
 		border-radius: 100%;
@@ -37,6 +46,7 @@
 		animation: change-color 10s ease-in-out infinite;
 		filter: hue-rotate(196deg);
 	}
+
 	.github-icon-light {
 		background-color: var(--10-light-theme);
 	}

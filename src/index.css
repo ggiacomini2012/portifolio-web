@@ -6,6 +6,11 @@
   --header-footer-height: calc(var(--footer-height) + var(--header-height) - 0.3vh);
   --font-size: calc(1.5vh + 1.5vw);
 
+  --header-font: calc(0.3rem + 0.7vh + 0.7vw);
+  --display-font: calc(0.3rem + 0.7vh + 0.7vw);
+  --footer-font: calc(0.3rem + 0.9vh + 0.9vw);
+  --about-contact-font: calc(1rem + 0.9vh + 0.9vw);
+
   --60-light-theme: #e7e7e6;
   --30-light-theme: #d7d5d4;
   --10-light-theme: #595347;

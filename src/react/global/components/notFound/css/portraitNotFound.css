@@ -1,5 +1,10 @@
-@media (max-aspect-ratio: 13/9) AND (pointer: coarse) {
-	.not-found-dark, .not-found-light {
+@media (max-aspect-ratio: 13/9)
+
+/* AND (pointer: coarse)  */
+	{
+
+	.not-found-dark,
+	.not-found-light {
 		background-color: var(--60-dark-theme);
 		width: 100%;
 		height: calc(100% - var(--header-footer-height));
@@ -12,6 +17,7 @@
 		box-sizing: border-box;
 		padding: 7%;
 	}
+
 	.not-found-light {
 		background-color: var(--60-light-theme);
 		color: var(--10-light-theme);

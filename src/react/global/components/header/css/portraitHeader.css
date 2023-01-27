@@ -1,4 +1,7 @@
-@media (max-aspect-ratio: 13/9) AND (pointer: coarse) {
+@media (max-aspect-ratio: 13/9)
+
+/* AND (pointer: coarse)  */
+	{
 
 	.header-dark,
 	.header-light {
@@ -27,7 +30,7 @@
 	.about-button-light,
 	.contact-button-dark,
 	.contact-button-light {
-		font-size: 1.2rem;
+		font-size: var(--header-font);
 		color: var(--10-dark-theme);
 		background-color: var(--30-dark-theme);
 		height: 3vh;
@@ -47,7 +50,7 @@
 
 	.select-language-dark,
 	.select-language-light {
-		font-size: 1.2rem;
+		font-size: var(--header-font);
 		color: var(--10-dark-theme);
 		background-color: var(--30-dark-theme);
 		height: 3.1vh;

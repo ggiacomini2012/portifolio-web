@@ -1,8 +1,13 @@
-@media (max-aspect-ratio: 13/9) AND (pointer: coarse) {
-	.contact-container-dark, .contact-container-light {
+@media (max-aspect-ratio: 13/9)
+
+/* AND (pointer: coarse)  */
+	{
+
+	.contact-container-dark,
+	.contact-container-light {
 		display: flex;
-    flex-direction: column;
-    align-items: center;
+		flex-direction: column;
+		align-items: center;
 		background-color: var(--60-dark-theme);
 		width: 100%;
 		height: calc(100% - var(--header-footer-height));
@@ -26,8 +31,9 @@
 		text-align: center;
 		padding: 7%;
 		color: var(--10-dark-theme);
-		font-size: 2rem;
+		font-size: var(--about-contact-font);
 		line-height: 4.5vh;
+		margin: 0;
 	}
 
 	.contact-intro-light {
