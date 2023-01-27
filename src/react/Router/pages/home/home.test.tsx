@@ -48,6 +48,6 @@ describe('Home tests:', () => {
   });
 
   test('7 - Has at least one project:', () => {
-    expect(screen.getByTestId('projects-display').children).toHaveLength(1);
+    expect(screen.getByTestId('projects-display').children.length).toBeGreaterThanOrEqual(1);
   });
 });
