@@ -1,9 +1,8 @@
-import React from 'react';
+/* eslint-disable no-restricted-syntax */
+import React, { useEffect } from 'react';
 import './css/desktopProjectsDisplay.css';
 import './css/portraitProjectsDisplay.css';
 import './css/landscapeProjectsDisplay.css';
-// import globalString from '../../constants/strings';
-// import s from './constants/strings';
 import { useSelector } from 'react-redux';
 import pixelArt from '../../../../../../assets/pixel-art-gif.gif';
 import calculator from '../../../../../../assets/js-v-calculator.gif';
@@ -19,11 +18,19 @@ function ProjectsDisplay() {
   const translator = (text: any) => functions.languageSelector(languageState.toTranlate, text);
   console.log(translator);
 
+  useEffect(() => {
+    const list = document.getElementsByClassName('project-display-image-dark');
+    for (const item of list) {
+      item.setAttribute('loop', 'true');
+      console.log(item.id);
+    }
+  }, []);
+
   return (
     <>
       <section id="project-display-container-1" data-testid="project-display-container-1" className={`project-display-container${theme}`}>
         Pixel-Art
-        <img data-testid="project-display-image-1" src={pixelArt} alt="bla" className={`project-display-image${theme}`} />
+        <img data-testid="project-display-image-1" src={pixelArt} alt="Pixel-Art" className={`project-display-image${theme}`} />
         <a href="https://js-v-pixel-art.netlify.app/" data-testid="project-display-button-deploy-link-1" target="_blank" rel="noreferrer" className={`project-display-button-deploy-link${theme}`}>
           <button data-testid="project-display-button-deploy-1" type="button" className={`project-display-button-deploy${theme}`}>Site</button>
         </a>
@@ -33,7 +40,7 @@ function ProjectsDisplay() {
       </section>
       <section id="project-display-container-2" data-testid="project-display-container-2" className={`project-display-container${theme}`}>
         Calculator
-        <img data-testid="project-display-image-2" src={calculator} alt="bla" className={`project-display-image${theme}`} />
+        <img data-testid="project-display-image-2" src={calculator} alt="Calculator" className={`project-display-image${theme}`} />
         <a href="https://js-v-calculator.netlify.app/" data-testid="project-display-button-deploy-link-2" target="_blank" rel="noreferrer" className={`project-display-button-deploy-link${theme}`}>
           <button data-testid="project-display-button-deploy-2" type="button" className={`project-display-button-deploy${theme}`}>Site</button>
         </a>
