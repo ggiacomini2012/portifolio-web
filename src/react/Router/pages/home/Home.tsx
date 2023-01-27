@@ -44,8 +44,13 @@ function Home() {
             {translator(globalStrings.text.intro)}
           </h1>
         </section>
-        <section data-testid="projects-display" className={`introduction-container${theme}`}>
-          <ProjectsDisplay />
+        <section id="projects-display-description" data-testid="projects-display-description" className={`projects-display-description${theme}`}>
+          <div>
+            ✣ PORTIFOLIO ✣
+          </div>
+          <div id="projects-display" data-testid="projects-display" className={`projects-display${theme}`}>
+            <ProjectsDisplay />
+          </div>
         </section>
       </main>
       <Footer />
