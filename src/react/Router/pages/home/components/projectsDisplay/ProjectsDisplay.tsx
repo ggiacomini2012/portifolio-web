@@ -25,20 +25,20 @@ function ProjectsDisplay() {
         Pixel-Art
         <img data-testid="project-display-image-1" src={pixelArt} alt="bla" className={`project-display-image${theme}`} />
         <a href="https://js-v-pixel-art.netlify.app/" data-testid="project-display-button-deploy-link-1" target="_blank" rel="noreferrer" className={`project-display-button-deploy-link${theme}`}>
-          <button data-testid="project-display-button-deploy-1" type="button" className={`project-display-button-deploy${theme}`}>deploy</button>
+          <button data-testid="project-display-button-deploy-1" type="button" className={`project-display-button-deploy${theme}`}>Site</button>
         </a>
         <a href="https://github.com/ggiacomini2012/pixel-art-js-vanilla" data-testid="project-display-button-github-link-1" target="_blank" rel="noreferrer" className={`project-display-button-github-link${theme}`}>
-          <button data-testid="project-display-button-github-1" type="button" className={`project-display-button-github${theme}`}>github</button>
+          <button data-testid="project-display-button-github-1" type="button" className={`project-display-button-github${theme}`}>Github</button>
         </a>
       </section>
       <section id="project-display-container-2" data-testid="project-display-container-2" className={`project-display-container${theme}`}>
         Calculator
         <img data-testid="project-display-image-2" src={calculator} alt="bla" className={`project-display-image${theme}`} />
         <a href="https://js-v-calculator.netlify.app/" data-testid="project-display-button-deploy-link-2" target="_blank" rel="noreferrer" className={`project-display-button-deploy-link${theme}`}>
-          <button data-testid="project-display-button-deploy-2" type="button" className={`project-display-button-deploy${theme}`}>deploy</button>
+          <button data-testid="project-display-button-deploy-2" type="button" className={`project-display-button-deploy${theme}`}>Site</button>
         </a>
         <a href="https://github.com/ggiacomini2012/calculadora-js-vanilla" data-testid="project-display-button-github-link-2" target="_blank" rel="noreferrer" className={`project-display-button-github-link${theme}`}>
-          <button data-testid="project-display-button-github-2" type="button" className={`project-display-button-github${theme}`}>github</button>
+          <button data-testid="project-display-button-github-2" type="button" className={`project-display-button-github${theme}`}>Github</button>
         </a>
       </section>
     </>
