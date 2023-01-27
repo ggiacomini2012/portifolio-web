@@ -42,4 +42,12 @@ describe('Home tests:', () => {
     fireEvent.change(screen.getByTestId('select-language-button'), { target: { value: 'português' } });
     expect(screen.getByTestId('introduction-text')).toHaveTextContent(globalStrings.português.intro);
   });
+
+  test('6 - Has a projects display with data-testid="projects-display":', () => {
+    expect(screen.getByTestId('projects-display')).toBeInTheDocument();
+  });
+
+  test('7 - Has at least one project:', () => {
+    expect(screen.getByTestId('projects-display').children).toHaveLength(1);
+  });
 });

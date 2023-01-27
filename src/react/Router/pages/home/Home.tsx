@@ -10,6 +10,7 @@ import functions from '../../../global/functions';
 import { useLanguage } from '../../../state-manager/redux/slices/sliceLanguage';
 import Header from '../../../global/components/header/header';
 import { useColorTheme } from '../../../state-manager/redux/slices/sliceColorTheme';
+import ProjectsDisplay from './components/projectsDisplay/ProjectsDisplay';
 
 const homeVariables = {
   translator: (text: any) => text,
@@ -42,6 +43,9 @@ function Home() {
           <h1 data-testid="introduction-text" className={`introduction${theme}`}>
             {translator(globalStrings.text.intro)}
           </h1>
+        </section>
+        <section data-testid="projects-display" className={`introduction-container${theme}`}>
+          <ProjectsDisplay />
         </section>
       </main>
       <Footer />
