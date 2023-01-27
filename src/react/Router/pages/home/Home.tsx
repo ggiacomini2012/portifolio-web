@@ -46,7 +46,7 @@ function Home() {
         </section>
         <section id="projects-display-description" data-testid="projects-display-description" className={`projects-display-description${theme}`}>
           <div>
-            ✣ PORTIFOLIO ✣
+            ✣ {translator(globalStrings.text.portifolio)} ✣
           </div>
           <div id="projects-display" data-testid="projects-display" className={`projects-display${theme}`}>
             <ProjectsDisplay />

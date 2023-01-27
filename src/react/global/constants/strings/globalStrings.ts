@@ -9,6 +9,7 @@ const globalStrings: Interface.IAllStrings = {
     aboutDescription: 'aboutDescription',
     contact: 'contact',
     contactDescription: 'contactDescription',
+    portifolio: 'portifolio',
   },
   developerName: 'Guilherme Giacomini Teixeira.',
   english: {
@@ -19,6 +20,7 @@ const globalStrings: Interface.IAllStrings = {
     aboutDescription: 'I’m a Front-End and Back-End Developer located in South of Brazil. Love UI effects. I\'m solutionist, Well-organised, with high attention to detail. Into making music, going for outdoor activities and socializing. Consider myself a continuos learner. Speak fluently english, portuguese and spanish',
     contact: 'contact',
     contactDescription: 'If you like what you see get in touch with me at:',
+    portifolio: 'PORTIFOLIO',
   },
   português: {
     intro: 'Olá, Guilherme Giacomini Teixeira, desenvolvedor web full stack.',
@@ -28,6 +30,7 @@ const globalStrings: Interface.IAllStrings = {
     aboutDescription: 'Sou um desenvolvedor Front e Back. Moro em Balneário Camboriú - SC. Gosto muito de trabalhar com UI. Mantenho o foco em criar soluções, cultivo uma boa organização pessoal e presto muita atenção aos detalhes. Crio músicas nas horas vagas, caminho, curto me reunir com amigos para tomar café e prosear. Tenho fluência no inglês e espanhol',
     contact: 'contacto',
     contactDescription: 'Se você gostou do meu trabalho me contacte através de algum destes canais:',
+    portifolio: 'PORTIFÓLIO',
   },
   colorTheme: {
     darkMode: '-dark',

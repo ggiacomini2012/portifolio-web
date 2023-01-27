@@ -6,6 +6,7 @@ interface ITexts {
   aboutDescription: string;
   contact: string;
   contactDescription: string;
+  portifolio: string;
 }
 
 interface IAllLanguages {
