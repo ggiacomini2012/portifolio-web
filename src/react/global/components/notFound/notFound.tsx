@@ -25,7 +25,7 @@ function NotFound() {
     <>
       <Header />
       <h1 id="not-found" data-testid="not-found" className={`not-found${theme} fade-in`}>
-        url not Found {translator(globalStrings.text.by)}
+        {translator(globalStrings.text.notFound)}
       </h1>
       <Footer />
     </>

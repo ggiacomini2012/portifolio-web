@@ -10,6 +10,7 @@ const globalStrings: Interface.IAllStrings = {
     contact: 'contact',
     contactDescription: 'contactDescription',
     portifolio: 'portifolio',
+    notFound: 'notFound',
   },
   developerName: 'Guilherme Giacomini Teixeira.',
   english: {
@@ -21,6 +22,7 @@ const globalStrings: Interface.IAllStrings = {
     contact: 'contact',
     contactDescription: 'If you like what you see get in touch with me at:',
     portifolio: 'PORTIFOLIO',
+    notFound: 'Url not found',
   },
   português: {
     intro: 'Olá, Guilherme Giacomini Teixeira, desenvolvedor web full stack.',
@@ -31,6 +33,7 @@ const globalStrings: Interface.IAllStrings = {
     contact: 'contacto',
     contactDescription: 'Se você gostou do meu trabalho me contacte através de algum destes canais:',
     portifolio: 'PORTIFÓLIO',
+    notFound: 'Url não encontrada',
   },
   colorTheme: {
     darkMode: '-dark',
