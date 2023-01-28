@@ -1,10 +1,10 @@
 @media (max-aspect-ratio: 13/9)
 
 /* AND (pointer: coarse)  */
-	{
+{
 
-	.about-dark,
-	.about-light {
+	.contact-container-dark,
+	.contact-container-light {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -16,10 +16,9 @@
 		opacity: 0;
 		transition: all 0.5s ease-in-out;
 		box-sizing: border-box;
-		overflow-y: scroll;
 	}
 
-	.about-light {
+	.contact-container-light {
 		background-color: var(--60-light-theme);
 	}
 
@@ -27,28 +26,39 @@
 		opacity: 1;
 	}
 
-	.about-myself-dark,
-	.about-myself-light {
+	.contact-intro-dark,
+	.contact-intro-light {
+		text-align: center;
 		padding: 7%;
 		color: var(--10-dark-theme);
 		font-size: var(--about-contact-font);
-		text-align: center;
 		line-height: 4.5vh;
 		margin: 0;
 	}
-
-	.about-myself-light {
+	.contact-intro-light {
 		color: var(--10-light-theme);
 	}
 
-	.about-picture-dark,
-	.about-picture-light {
+	.contact-icon-link-dark,
+	.contact-icon-link-light {
+		display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 21vh;
+    aspect-ratio: 1 / 1;
+    justify-content: center;
+	}
+	.contact-icon-link-light {
+	}
+
+	.contact-icon-dark,
+	.contact-icon-light {
 		width: var(--image-size);
 		height: var(--image-size);
 		filter: invert(0.95);
+		transform: scale(0.4);
 	}
-
-	.about-picture-light {
+	.contact-icon-light {
 		filter: invert(0);
 	}
 }

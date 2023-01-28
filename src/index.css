@@ -2,7 +2,9 @@
   --image-size: calc(19vh + 19vw);
 
   --header-height: 5vh;
+  --header-height-landscape: 8vh;
   --footer-height: 5vh;
+  --footer-height-landscape: 8vh;
   --header-footer-height: calc(var(--footer-height) + var(--header-height) - 0.3vh);
   --font-size: calc(1.5vh + 1.5vw);
 

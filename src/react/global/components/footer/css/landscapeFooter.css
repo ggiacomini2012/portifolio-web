@@ -1,8 +1,80 @@
 @media (min-aspect-ratio: 13/9)
 
 /* AND (pointer: coarse)  */
-	{
-	#template {
-		background-color: blue;
+{
+
+	.footer-dark,
+	.footer-light {
+		font-size: var(--footer-font);
+		display: flex;
+		color: var(--10-dark-theme);
+		background-color: var(--30-dark-theme);
+		height: var(--footer-height-landscape);
+		width: 100%;
+		position: fixed;
+		justify-content: center;
+		align-items: center;
+		bottom: 0;
+		z-index: 10;
+		transition: all 0.5s ease-in-out;
+	}
+
+	.footer-light {
+		color: var(--10-light-theme);
+		background-color: var(--30-light-theme);
+	}
+
+	.footer-link-dark,
+	.footer-link-light {
+		display: flex;
+		text-decoration: none;
+		color: var(--10-dark-theme);
+		align-items: center;
+	}
+
+	.footer-link-light {
+		color: var(--10-light-theme);
+	}
+
+	.github-icon-dark,
+	.github-icon-light {
+		width: 2.5vh;
+		margin-left: 4px;
+		border-radius: 100%;
+		padding: 2px;
+		background-color: var(--10-dark-theme);
+		animation: change-color 10s ease-in-out infinite;
+		filter: hue-rotate(196deg);
+	}
+
+	.github-icon-light {
+		background-color: var(--10-light-theme);
+	}
+
+	@keyframes change-color {
+		0% {
+			filter: hue-rotate(1deg);
+			transform: scale(1.1)
+		}
+
+		25% {
+			filter: hue-rotate(80deg);
+			transform: scale(1)
+		}
+
+		50% {
+			filter: hue-rotate(170deg);
+			transform: scale(1.1)
+		}
+
+		75% {
+			filter: hue-rotate(260deg);
+			transform: scale(1)
+		}
+
+		100% {
+			filter: hue-rotate(355deg);
+			transform: scale(1.1)
+		}
 	}
 }
