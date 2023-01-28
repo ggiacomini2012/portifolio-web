@@ -44,7 +44,7 @@
 		display: flex;
     flex-direction: column;
     align-items: center;
-    height: 21vh;
+    height: 17vh;
     aspect-ratio: 1 / 1;
     justify-content: center;
 	}

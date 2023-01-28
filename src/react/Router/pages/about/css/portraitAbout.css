@@ -2,9 +2,8 @@
 
 /* AND (pointer: coarse)  */
 {
-
-	.contact-container-dark,
-	.contact-container-light {
+	.about-dark,
+	.about-light {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -16,9 +15,10 @@
 		opacity: 0;
 		transition: all 0.5s ease-in-out;
 		box-sizing: border-box;
+		overflow-y: scroll;
 	}
 
-	.contact-container-light {
+	.about-light {
 		background-color: var(--60-light-theme);
 	}
 
@@ -26,39 +26,28 @@
 		opacity: 1;
 	}
 
-	.contact-intro-dark,
-	.contact-intro-light {
-		text-align: center;
+	.about-myself-dark,
+	.about-myself-light {
 		padding: 7%;
 		color: var(--10-dark-theme);
 		font-size: var(--about-contact-font);
+		text-align: center;
 		line-height: 4.5vh;
 		margin: 0;
 	}
-	.contact-intro-light {
+
+	.about-myself-light {
 		color: var(--10-light-theme);
 	}
 
-	.contact-icon-link-dark,
-	.contact-icon-link-light {
-		display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 21vh;
-    aspect-ratio: 1 / 1;
-    justify-content: center;
-	}
-	.contact-icon-link-light {
-	}
-
-	.contact-icon-dark,
-	.contact-icon-light {
+	.about-picture-dark,
+	.about-picture-light {
 		width: var(--image-size);
 		height: var(--image-size);
 		filter: invert(0.95);
-		transform: scale(0.4);
 	}
-	.contact-icon-light {
+
+	.about-picture-light {
 		filter: invert(0);
 	}
 }
