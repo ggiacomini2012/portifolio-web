@@ -1,8 +1,6 @@
 @media (max-aspect-ratio: 13/9)
-
 /* AND (pointer: coarse)  */
 	{
-
 	.contact-container-dark,
 	.contact-container-light {
 		display: flex;
