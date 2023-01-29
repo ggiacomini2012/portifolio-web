@@ -1,4 +1,4 @@
-@media (max-aspect-ratio: 13/9)
+@media (max-aspect-ratio: 13/9) AND (orientation: portrait)
 
 /* AND (pointer: coarse)  */
 	{
@@ -16,14 +16,15 @@
 		padding: 1vh;
 		transition: all ease-in-out 0.5s;
 		box-shadow: inset 0px 0px 0.3vh 0.1vh var(--10-dark-theme),
-		0px 0.5vh 0.3vh 0.1vh var(--10-dark-theme);
+			0px 0.5vh 0.3vh 0.1vh var(--10-dark-theme);
 		background-color: var(--60-dark-theme);
 		color: var(--10-dark-theme);
 	}
 
 	.project-display-container-light {
 		box-shadow: inset 0px 0px 0.2vh 0.3vh var(--10-light-theme),
-		0px 0.5vh 0.3vh 0.1vh var(--10-light-theme);;
+			0px 0.5vh 0.3vh 0.1vh var(--10-light-theme);
+		;
 		background-color: var(--60-light-theme);
 		color: var(--10-light-theme);
 	}
@@ -31,7 +32,7 @@
 	.project-display-image-dark,
 	.project-display-image-light {
 		width: 72vw;
-    aspect-ratio: 2 / 1;
+		aspect-ratio: 2 / 1;
 	}
 
 	.project-display-image-light {}

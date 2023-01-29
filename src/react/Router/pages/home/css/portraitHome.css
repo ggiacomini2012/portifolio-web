@@ -1,4 +1,4 @@
-@media (max-aspect-ratio: 13/9)
+@media (max-aspect-ratio: 13/9) AND (orientation: portrait)
 
 /* AND (pointer: coarse)  */
 	{
@@ -111,10 +111,11 @@
 	.projects-display-dark,
 	.projects-display-light {
 		height: 37vh;
-    width: 85vw;
+		width: 85vw;
 		display: flex;
 		flex-direction: row;
 		overflow-x: scroll;
+		overflow-y: hidden;
 		border-radius: 5vh;
 		transition: all 0.5s ease-in-out;
 		background-color: var(--30-dark-theme);

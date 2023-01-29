@@ -1,6 +1,8 @@
-@media (max-aspect-ratio: 13/9)
+@media (max-aspect-ratio: 13/9) AND (orientation: portrait)
+
 /* AND (pointer: coarse)  */
 	{
+
 	.contact-container-dark,
 	.contact-container-light {
 		display: flex;
@@ -33,6 +35,7 @@
 		line-height: 4.5vh;
 		margin: 0;
 	}
+
 	.contact-intro-light {
 		color: var(--10-light-theme);
 	}
@@ -40,14 +43,14 @@
 	.contact-icon-link-dark,
 	.contact-icon-link-light {
 		display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 17vh;
-    aspect-ratio: 1 / 1;
-    justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		height: 17vh;
+		aspect-ratio: 1 / 1;
+		justify-content: center;
 	}
-	.contact-icon-link-light {
-	}
+
+	.contact-icon-link-light {}
 
 	.contact-icon-dark,
 	.contact-icon-light {
@@ -56,6 +59,7 @@
 		filter: invert(0.95);
 		transform: scale(0.4);
 	}
+
 	.contact-icon-light {
 		filter: invert(0);
 	}

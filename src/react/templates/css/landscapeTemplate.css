@@ -1,4 +1,5 @@
-@media (min-aspect-ratio: 13/9)
+@media (min-aspect-ratio: 13/9),
+(orientation: landscape)
 
 /* AND (pointer: coarse)  */
 	{

@@ -1,12 +1,13 @@
-@media (min-aspect-ratio: 13/9)
+@media (min-aspect-ratio: 13/9),
+(orientation: landscape)
 
 /* AND (pointer: coarse)  */
-{
+	{
 
 	.contact-container-dark,
 	.contact-container-light {
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		align-items: center;
 		background-color: var(--60-dark-theme);
 		width: 100%;
@@ -30,11 +31,13 @@
 	.contact-intro-light {
 		text-align: center;
 		padding: 7%;
+		width: 30vw;
 		color: var(--10-dark-theme);
 		font-size: var(--about-contact-font);
-		line-height: 4.5vh;
+		line-height: 6vh;
 		margin: 0;
 	}
+
 	.contact-intro-light {
 		color: var(--10-light-theme);
 	}
@@ -42,14 +45,15 @@
 	.contact-icon-link-dark,
 	.contact-icon-link-light {
 		display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 21vh;
-    aspect-ratio: 1 / 1;
-    justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		height: 21vh;
+		margin-left: 3vw;
+		aspect-ratio: 1 / 1;
+		justify-content: center;
 	}
-	.contact-icon-link-light {
-	}
+
+	.contact-icon-link-light {}
 
 	.contact-icon-dark,
 	.contact-icon-light {
@@ -58,6 +62,7 @@
 		filter: invert(0.95);
 		transform: scale(0.4);
 	}
+
 	.contact-icon-light {
 		filter: invert(0);
 	}

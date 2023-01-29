@@ -1,4 +1,4 @@
-@media (max-aspect-ratio: 13/9)
+@media (max-aspect-ratio: 13/9) AND (orientation: portrait)
 
 /* AND (pointer: coarse)  */
 	{
