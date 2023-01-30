@@ -6,23 +6,22 @@ import './css/desktopProjectsDisplay.css';
 import { useSelector } from 'react-redux';
 import pixelArt from '../../../../../../assets/pixel-art-gif.gif';
 import calculator from '../../../../../../assets/js-v-calculator.gif';
-import { useLanguage } from '../../../../../state-manager/redux/slices/sliceLanguage';
+// import { useLanguage } from '../../../../../state-manager/redux/slices/sliceLanguage';
 import { useColorTheme } from '../../../../../state-manager/redux/slices/sliceColorTheme';
 import functions from '../../../../../global/functions';
 
 function ProjectsDisplay() {
-  const [languageState] = useSelector(useLanguage);
+  // const [languageState] = useSelector(useLanguage);
   const [themeState] = useSelector(useColorTheme);
 
   const theme = functions.colorThemeSelector(themeState.colorTheme);
-  const translator = (text: any) => functions.languageSelector(languageState.toTranlate, text);
-  console.log(translator);
+  // const translator = (text: any) => functions.languageSelector(languageState.toTranlate, text);
+  // console.log(translator);
 
   useEffect(() => {
     const list = document.getElementsByClassName('project-display-image-dark');
     for (const item of list) {
       item.setAttribute('loop', 'true');
-      console.log(item.id);
     }
   }, []);
 

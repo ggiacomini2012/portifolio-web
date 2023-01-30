@@ -12,9 +12,9 @@ import Header from '../../../global/components/header/header';
 import { useColorTheme } from '../../../state-manager/redux/slices/sliceColorTheme';
 import ProjectsDisplay from './components/projectsDisplay/ProjectsDisplay';
 
-const homeVariables = {
-  translator: (text: any) => text,
-};
+// const homeVariables = {
+//   translator: (text: any) => text,
+// };
 
 function Home() {
   const [languageState] = useSelector(useLanguage);
@@ -23,7 +23,7 @@ function Home() {
   const theme = functions.colorThemeSelector(themeState.colorTheme);
   const translator = (text: any) => functions.languageSelector(languageState.toTranlate, text);
 
-  homeVariables.translator = translator;
+  // homeVariables.translator = translator;
 
   useEffect(() => {
     functions.fadeIn('home');
@@ -68,6 +68,6 @@ function Home() {
   );
 }
 
-export { homeVariables };
+// export { homeVariables };
 
 export default Home;

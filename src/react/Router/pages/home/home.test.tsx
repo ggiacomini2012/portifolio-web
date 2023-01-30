@@ -43,11 +43,11 @@ describe('Home tests:', () => {
     expect(screen.getByTestId('introduction-text')).toHaveTextContent(globalStrings.português.intro);
   });
 
-  test('6 - Has a projects display with data-testid="projects-display":', () => {
-    expect(screen.getByTestId('projects-display')).toBeInTheDocument();
+  test('6 - Has a projects display with data-testid="all-projects-display":', () => {
+    expect(screen.getByTestId('all-projects-display')).toBeInTheDocument();
   });
 
   test('7 - Has at least one project:', () => {
-    expect(screen.getByTestId('projects-display').children.length).toBeGreaterThanOrEqual(1);
+    expect(screen.getByTestId('all-projects-display').children.length).toBeGreaterThanOrEqual(1);
   });
 });

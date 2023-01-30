@@ -17,12 +17,12 @@ describe('ProjectDisplay tests:', () => {
     );
   });
 
-  test('3 - Has a TAG section that embrace a image and two buttons with data-testid="project-display-container-1":', () => {
+  test('1 - Has a TAG section that embrace a image and two buttons with data-testid="project-display-container-1":', () => {
     expect(screen.getByTestId('project-display-container-1')).toBeInTheDocument();
     expect(screen.getByTestId('project-display-container-1').tagName).eq('SECTION');
   });
 
   test('2 - Section has three children:', () => {
-    expect(screen.getByTestId('project-display-container-1').children).toHaveLength(3);
+    expect(screen.getByTestId('project-display-container-1').children).toHaveLength(4);
   });
 });
