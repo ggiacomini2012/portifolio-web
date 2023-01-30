@@ -34,7 +34,11 @@ function Home() {
       <Header />
       <main id="home" data-testid="home" className={`home${theme} fade-in`}>
         <section className={`figure-container${theme}`}>
-          <figure data-testid="profile-picture-container" id="profile-picture-container" className={`profile-picture-container${theme}`}>
+          <figure
+            data-testid="profile-picture-container"
+            id="profile-picture-container"
+            className={`profile-picture-container${theme}`}
+          >
             <img src={guilherme} alt="guilherme profile" className={`profile-picture${theme}`} />
             <div id="fade-effect-for-profile-picture" className={`fade-effect${theme}`} />
           </figure>
@@ -44,11 +48,17 @@ function Home() {
             {translator(globalStrings.text.intro)}
           </h1>
         </section>
-        <section id="projects-display-description" data-testid="projects-display-description" className={`projects-display-description${theme}`}>
-          <div>
-            ✣ {translator(globalStrings.text.portifolio)} ✣
-          </div>
-          <div id="projects-display" data-testid="projects-display" className={`projects-display${theme}`}>
+        <section
+          id="section-display-container-container"
+          data-testid="section-display-container-container"
+          className={`section-display-container-container${theme}`}
+        >
+          <div className={`portifolio${theme}`}>✣ {translator(globalStrings.text.portifolio)} ✣</div>
+          <div
+            id="all-projects-display"
+            data-testid="all-projects-display"
+            className={`all-projects-display${theme}`}
+          >
             <ProjectsDisplay />
           </div>
         </section>
