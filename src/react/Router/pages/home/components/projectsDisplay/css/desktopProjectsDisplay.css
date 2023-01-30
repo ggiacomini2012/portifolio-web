@@ -3,9 +3,10 @@
 	.project-display-container-dark,
 	.project-display-container-light {
 		height: fit-content;
-    margin: 4vw;
+    width: fit-content;
+    margin: 3vw;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     align-content: space-around;
     justify-content: space-around;
@@ -15,6 +16,7 @@
     box-shadow: inset 0px 0px 0.3vh 0.1vh var(--10-dark-theme), 0px 0.5vh 0.3vh 0.1vh var(--10-dark-theme);
     background-color: var(--60-dark-theme);
     color: var(--10-dark-theme);
+    align-items: center;
 	}
 
 	.project-display-container-light {
@@ -24,10 +26,18 @@
 		background-color: var(--60-light-theme);
 		color: var(--10-light-theme);
 	}
+	
+	.project-title-dark, .project-title-light {
+		color: var(--10-dark-theme);
+		margin: 0.2vh 0;
+	}
+	.project-title-light {
+		color: var(--10-light-theme);
+	}
 
 	.project-display-image-dark,
 	.project-display-image-light {
-		width: 72vw;
+    width: 28vw;
 		aspect-ratio: 2 / 1;
 		margin: 1vh 1vw;
 	}
@@ -47,6 +57,7 @@
 		border: solid 0.1vw;
 		color: var(--10-dark-theme);
 		background-color: var(--60-dark-theme);
+		margin: 0.4vh;
 	}
 
 	.project-display-button-deploy-light,
