@@ -6,7 +6,7 @@
 
 	.project-display-container-dark,
 	.project-display-container-light {
-		height: 59vh;
+		height: 47vh;
 		margin: 1vh 3vw;
 		display: flex;
 		flex-direction: row;
@@ -32,7 +32,7 @@
 
 	.project-display-image-dark,
 	.project-display-image-light {
-		width: 44vw;
+		width: 35vw;
 		aspect-ratio: 2 / 1;
 	}
 

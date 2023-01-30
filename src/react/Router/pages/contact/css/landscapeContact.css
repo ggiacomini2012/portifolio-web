@@ -59,11 +59,12 @@
 	.contact-icon-light {
 		width: var(--image-size);
 		height: var(--image-size);
-		filter: invert(0.95);
+		filter: invert(0.95) hue-rotate(157deg) saturate(16.5) brightness(0.85);
 		transform: scale(0.4);
 	}
 
 	.contact-icon-light {
 		filter: invert(0);
+		filter: invert(0) hue-rotate(157deg) saturate(5) brightness(2.35);
 	}
 }
