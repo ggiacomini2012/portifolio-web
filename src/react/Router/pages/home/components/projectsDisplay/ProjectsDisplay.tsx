@@ -29,7 +29,9 @@ function ProjectsDisplay() {
   return (
     <>
       <section id="project-display-container-1" data-testid="project-display-container-1" className={`project-display-container${theme}`}>
-        Pixel-Art
+        <div className={`project-title${theme}`}>
+          Pixel-Art
+        </div>
         <img data-testid="project-display-image-1" src={pixelArt} alt="Pixel-Art" className={`project-display-image${theme}`} />
         <a href="https://js-v-pixel-art.netlify.app/" data-testid="project-display-button-deploy-link-1" target="_blank" rel="noreferrer" className={`project-display-button-deploy-link${theme}`}>
           <button data-testid="project-display-button-deploy-1" type="button" className={`project-display-button-deploy${theme}`}>Site</button>
@@ -39,7 +41,9 @@ function ProjectsDisplay() {
         </a>
       </section>
       <section id="project-display-container-2" data-testid="project-display-container-2" className={`project-display-container${theme}`}>
-        Calculator
+        <div className={`project-title${theme}`}>
+          Calculator
+        </div>
         <img data-testid="project-display-image-2" src={calculator} alt="Calculator" className={`project-display-image${theme}`} />
         <a href="https://js-v-calculator.netlify.app/" data-testid="project-display-button-deploy-link-2" target="_blank" rel="noreferrer" className={`project-display-button-deploy-link${theme}`}>
           <button data-testid="project-display-button-deploy-2" type="button" className={`project-display-button-deploy${theme}`}>Site</button>
