@@ -9,7 +9,7 @@ import './css/portraitAbout.css';
 import './css/landscapeAbout.css';
 import './css/desktopAbout.css';
 import globalStrings from '../../../global/constants/strings/globalStrings';
-import programer from '../../../../assets/programmer.svg';
+import programmer from '../../../../assets/programmer.svg';
 
 function About() {
   const [languageState] = useSelector(useLanguage);
@@ -29,7 +29,7 @@ function About() {
         <h1 className={`about-myself${theme}`}>
           {translator(globalStrings.text.aboutDescription)}
         </h1>
-        <img src={programer} alt="programer working" className={`about-picture${theme}`} />
+        <img src={programmer} alt="programer working" className={`about-picture${theme}`} />
       </main>
       <Footer />
     </>
