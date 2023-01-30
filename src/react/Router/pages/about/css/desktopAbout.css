@@ -43,9 +43,9 @@
 	.about-picture-light {
 		width: var(--image-size);
 		height: var(--image-size);
-		filter: invert(0.95) hue-rotate(157deg) saturate(16.5) brightness(0.85);
+		filter: invert(0.95) hue-rotate(157deg) saturate(12.5) brightness(0.85);
 	}
-	
+
 	.about-picture-light {
 		filter: invert(0) hue-rotate(157deg) saturate(5) brightness(2.35);
 	}
