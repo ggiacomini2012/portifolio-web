@@ -46,6 +46,8 @@
 
 	.select-language-dark,
 	.select-language-light {
+		text-align: center;
+		cursor: pointer;
 		font-size: var(--header-font);
 		color: var(--10-dark-theme);
 		background-color: var(--30-dark-theme);
