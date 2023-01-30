@@ -1,5 +1,57 @@
 @media (hover: hover) {
-	#template {
-		background-color: blue;
+
+	.project-display-container-dark,
+	.project-display-container-light {
+		height: fit-content;
+    margin: 4vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+    border-radius: 20px;
+    padding: 1vh;
+    transition: all ease-in-out 0.5s;
+    box-shadow: inset 0px 0px 0.3vh 0.1vh var(--10-dark-theme), 0px 0.5vh 0.3vh 0.1vh var(--10-dark-theme);
+    background-color: var(--60-dark-theme);
+    color: var(--10-dark-theme);
+	}
+
+	.project-display-container-light {
+		box-shadow: inset 0px 0px 0.2vh 0.3vh var(--10-light-theme),
+			0px 0.5vh 0.3vh 0.1vh var(--10-light-theme);
+		;
+		background-color: var(--60-light-theme);
+		color: var(--10-light-theme);
+	}
+
+	.project-display-image-dark,
+	.project-display-image-light {
+		width: 72vw;
+		aspect-ratio: 2 / 1;
+		margin: 1vh 1vw;
+	}
+
+	.project-display-image-light {}
+
+	.project-display-button-deploy-dark,
+	.project-display-button-deploy-light,
+	.project-display-button-github-dark,
+	.project-display-button-github-light {
+		width: 20vw;
+		font-size: var(--header-font);
+		height: 3vh;
+		width: 15vw;
+		border-radius: 1vw;
+		transition: all 0.5s ease-in-out;
+		border: solid 0.1vw;
+		color: var(--10-dark-theme);
+		background-color: var(--60-dark-theme);
+	}
+
+	.project-display-button-deploy-light,
+	.project-display-button-github-light {
+		color: var(--10-light-theme);
+		background-color: var(--60-light-theme);
 	}
 }

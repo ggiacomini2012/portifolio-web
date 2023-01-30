@@ -1,5 +1,52 @@
 @media (hover: hover) {
-	#template {
-		background-color: blue;
+
+	.about-dark,
+	.about-light {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		background-color: var(--60-dark-theme);
+		width: 100%;
+		height: calc(100% - var(--header-footer-height));
+		margin-top: var(--header-height);
+		margin-bottom: var(--footer-height);
+		opacity: 0;
+		transition: all 0.5s ease-in-out;
+		box-sizing: border-box;
+		overflow-y: scroll;
+	}
+
+	.about-light {
+		background-color: var(--60-light-theme);
+	}
+
+	.fade-in {
+		opacity: 1;
+	}
+
+	.about-myself-dark,
+	.about-myself-light {
+		width: 50vw;
+		padding: 7%;
+		color: var(--10-dark-theme);
+		font-size: var(--about-contact-font);
+		text-align: center;
+		line-height: 6vh;
+		margin: 0;
+	}
+
+	.about-myself-light {
+		color: var(--10-light-theme);
+	}
+
+	.about-picture-dark,
+	.about-picture-light {
+		width: var(--image-size);
+		height: var(--image-size);
+		filter: invert(0.95) hue-rotate(157deg) saturate(16.5) brightness(0.85);
+	}
+	
+	.about-picture-light {
+		filter: invert(0) hue-rotate(157deg) saturate(5) brightness(2.35);
 	}
 }

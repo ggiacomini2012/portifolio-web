@@ -1,5 +1,58 @@
 @media (hover: hover) {
-	#template {
-		background-color: blue;
+
+	.button-moon-sun-dark,
+	.button-moon-sun-light {
+		display: flex;
+		width: calc(4vh + 4vw);
+		height: 4.5vh;
+		border: none;
+		border-radius: 5vh;
+		background-color: transparent;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 0;
+	}
+
+	.moon-sun-container-dark,
+	.moon-sun-container-light {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		border-radius: 6vh;
+		height: 10vh;
+		background-color: var(--30-dark-theme);
+		transition: all ease-in-out 0.5s;
+		box-shadow: inset calc(2.5vh + 2.5vw) 0px 0 0px black, 0px 0px 0 3px black;
+		transform: scale(0.5);
+	}
+
+	.moon-sun-container-light {
+		box-shadow: inset calc(-2.5vh + -2.5vw) 0px 0 0px black, 0px 0px 0 3px black;
+		background-color: var(--30-light-theme);
+	}
+
+	.svg-moon-dark,
+	.svg-moon-light {
+		transition: all ease-in-out 0.5s;
+		width: 10vh;
+		transform: scale(0);
+		margin-left: 0.2vh;
+	}
+
+	.svg-moon-light {
+		transform: scale(1);
+	}
+
+	.svg-sun-dark,
+	.svg-sun-light {
+		transition: all ease-in-out 0.5s;
+		width: 6vh;
+		margin-right: 2vh;
+		filter: invert(1);
+	}
+
+	.svg-sun-light {
+		transform: scale(0);
 	}
 }

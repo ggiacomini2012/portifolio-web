@@ -1,5 +1,26 @@
 @media (hover: hover) {
-	#template {
-		background-color: blue;
+
+	.not-found-dark,
+	.not-found-light {
+		background-color: var(--60-dark-theme);
+		width: 100%;
+		height: calc(100% - var(--header-footer-height));
+		margin-top: var(--header-height);
+		margin-bottom: var(--footer-height);
+		opacity: 0;
+		transition: all 0.5s ease-in-out;
+		color: var(--10-dark-theme);
+		font-size: 2rem;
+		box-sizing: border-box;
+		padding: 7%;
+	}
+
+	.not-found-light {
+		background-color: var(--60-light-theme);
+		color: var(--10-light-theme);
+	}
+
+	.fade-in {
+		opacity: 1;
 	}
 }

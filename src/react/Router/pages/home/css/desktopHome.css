@@ -1,5 +1,125 @@
 @media (hover: hover) {
-	#template {
-		background-color: blue;
+	.home-dark,
+	.home-light {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: calc(100% - var(--header-footer-height));
+		margin-top: var(--header-height);
+		margin-bottom: var(--footer-height);
+		align-items: center;
+		background-color: var(--60-dark-theme);
+		color: var(--10-dark-theme);
+		transition: all ease-in-out 0.5s;
+		opacity: 0;
+		box-sizing: border-box;
+		overflow-y: scroll;
+	}
+
+	.home-light {
+		background-color: var(--60-light-theme);
+		color: var(--10-light-theme);
+	}
+
+	.fade-in {
+		opacity: 1;
+	}
+
+	.introduction-container-dark,
+	.introduction-container-light {
+		margin: 15vh 4vh;
+		/* color: var(--10-dark-theme); */
+	}
+
+	/* .introduction-container-light {
+		color: var(--10-light-theme);
+	} */
+
+	.introduction-dark,
+	.introduction-light {
+		text-align: center;
+		width: 70vw;
+		line-height: 5vh;
+		font-size: var(--font-size);
+		color: var(--10-dark-theme);
+	}
+
+	.introduction-light {
+		color: var(--10-light-theme);
+	}
+
+	.figure-container-dark,
+	.figure-container-light {
+		width: var(--image-size);
+		height: var(--image-size);
+		position: relative;
+	}
+
+	.profile-picture-container-dark,
+	.profile-picture-container-light {
+		margin: 0;
+		width: var(--image-size);
+		height: var(--image-size);
+		position: relative;
+	}
+
+	.profile-picture-dark,
+	.profile-picture-light {
+		width: var(--image-size);
+		height: var(--image-size);
+	}
+
+	.fade-effect-dark,
+	.fade-effect-light {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: var(--image-size);
+		height: var(--image-size);
+		transition: all ease-in-out 0.5s;
+		box-shadow: inset 0px 0px calc(1vw + 1vh) calc(1vw + 1vh) var(--60-dark-theme),
+			inset 0px 0px calc(1vw + 1vh) calc(1vw + 1vh) var(--60-dark-theme),
+			0px 0px calc(1vw + 1vh) calc(1vw + 1vh) var(--60-dark-theme);
+	}
+
+	.fade-effect-light {
+		box-shadow: inset 0px 0px calc(1vw + 1vh) calc(1vw + 1vh) var(--60-light-theme),
+			inset 0px 0px calc(1vw + 1vh) calc(1vw + 1vh) var(--60-light-theme),
+			0px 0px calc(1vw + 1vh) calc(1vw + 1vh) var(--60-light-theme);
+	}
+
+	.projects-display-description-dark,
+	.projects-display-description-light {
+		display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    transition: all 0.5s ease-in-out;
+    font-size: calc(var(--font-size) - 0.5rem);
+    font-weight: bolder;
+    margin-bottom: 5vh;
+    color: var(--10-dark-theme);
+	}
+
+	.projects-display-description-light {
+		color: var(--10-light-theme);
+	}
+
+	.projects-display-dark,
+	.projects-display-light {
+    height: fit-content;
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    /* overflow-x: hidden; */
+    /* overflow-y: auto; */
+    border-radius: 5vh;
+    transition: all 0.5s ease-in-out;
+    background-color: var(--30-dark-theme);
+	}
+
+	.projects-display-light {
+		background-color: var(--30-light-theme);
 	}
 }
