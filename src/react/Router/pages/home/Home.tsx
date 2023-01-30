@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-import './css/desktopHome.css';
 import './css/portraitHome.css';
 import './css/landscapeHome.css';
+import './css/desktopHome.css';
 import { useSelector } from 'react-redux';
 import guilherme from '../../../../assets/profile-picture.png';
 import Footer from '../../../global/components/footer/footer';

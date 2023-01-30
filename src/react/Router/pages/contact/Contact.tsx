@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { useSelector } from 'react-redux';
-import './css/desktopContact.css';
 import './css/portraitContact.css';
 import './css/landscapeContact.css';
+import './css/desktopContact.css';
 import { useLanguage } from '../../../state-manager/redux/slices/sliceLanguage';
 import functions from '../../../global/functions';
 import globalStrings from '../../../global/constants/strings/globalStrings';

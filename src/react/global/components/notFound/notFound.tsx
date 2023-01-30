@@ -1,6 +1,6 @@
-import './css/desktopNotFound.css';
 import './css/portraitNotFound.css';
 import './css/landscapeNotFound.css';
+import './css/desktopNotFound.css';
 import { useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import Header from '../header/header';

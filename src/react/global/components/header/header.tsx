@@ -1,6 +1,6 @@
-import './css/desktopHeader.css';
 import './css/portraitHeader.css';
 import './css/landscapeHeader.css';
+import './css/desktopHeader.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { changeLanguage, useLanguage } from '../../../state-manager/redux/slices/sliceLanguage';

@@ -1,8 +1,8 @@
 /* eslint-disable no-restricted-syntax */
 import React, { useEffect } from 'react';
-import './css/desktopProjectsDisplay.css';
 import './css/portraitProjectsDisplay.css';
 import './css/landscapeProjectsDisplay.css';
+import './css/desktopProjectsDisplay.css';
 import { useSelector } from 'react-redux';
 import pixelArt from '../../../../../../assets/pixel-art-gif.gif';
 import calculator from '../../../../../../assets/js-v-calculator.gif';

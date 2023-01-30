@@ -2,9 +2,9 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { changeColorTheme, useColorTheme } from '../../../../../state-manager/redux/slices/sliceColorTheme';
 import functions from '../../../../functions';
-import './css/desktopColorTheme.css';
 import './css/portraitColorTheme.css';
 import './css/landscapeColorTheme.css';
+import './css/desktopColorTheme.css';
 
 function ColorTheme() {
   const dispatch = useDispatch();

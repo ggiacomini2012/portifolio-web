@@ -1,6 +1,6 @@
-import './css/desktopFooter.css';
 import './css/portraitFooter.css';
 import './css/landscapeFooter.css';
+import './css/desktopFooter.css';
 import { useSelector } from 'react-redux';
 import globalStrings from '../../constants/strings/globalStrings';
 import { useLanguage } from '../../../state-manager/redux/slices/sliceLanguage';

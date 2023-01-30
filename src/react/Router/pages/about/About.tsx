@@ -5,9 +5,9 @@ import Header from '../../../global/components/header/header';
 import functions from '../../../global/functions';
 import { useColorTheme } from '../../../state-manager/redux/slices/sliceColorTheme';
 import { useLanguage } from '../../../state-manager/redux/slices/sliceLanguage';
-import './css/desktopAbout.css';
 import './css/portraitAbout.css';
 import './css/landscapeAbout.css';
+import './css/desktopAbout.css';
 import globalStrings from '../../../global/constants/strings/globalStrings';
 import programer from '../../../../assets/programmer.svg';
 
