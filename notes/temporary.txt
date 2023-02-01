@@ -24,11 +24,10 @@ Renomear:
 adicionar traducao para os botoes ✅
 adicionar texto traduzivel no about ✅
 
-Antes fazer os testes
-o scroll será um componente do home
-adicionar scroll horizontal com uma flecha lateral que ao começar a scrollar desaparece
-  Neste scroll terão cards com git de cada projeto link para o github e like para o deploy
+Antes fazer os testes ✅
+o scroll será um componente do home ✅
+adicionar scroll horizontal com uma flecha lateral que ao começar a scrollar desaparece ✅
+  Neste scroll terão cards com git de cada projeto link para o github e like para o deploy ✅
 
-
-
+Atingir o coverage de 100% e fazer o E2E de todas as páginas no cypress
 
