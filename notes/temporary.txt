@@ -30,4 +30,8 @@ adicionar scroll horizontal com uma flecha lateral que ao começar a scrollar de
   Neste scroll terão cards com git de cada projeto link para o github e like para o deploy ✅
 
 Atingir o coverage de 100% e fazer o E2E de todas as páginas no cypress
+  test:
+    languageSelector
+    translator
+    todos slices
 
