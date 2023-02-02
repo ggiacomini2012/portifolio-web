@@ -6,7 +6,7 @@ import { fixture, assert } from '@open-wc/testing';
 import App from '../../../../App';
 import preLoad, { timer } from '../preLoad';
 
-describe('Test createRoot', () => {
+describe('PreLoad function tests', () => {
   const root = document.createElement('div');
   root.id = 'root';
   root!.style.display = 'none';
