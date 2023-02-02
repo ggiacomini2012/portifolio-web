@@ -12,30 +12,28 @@ describe('Test createRoot', () => {
   root!.style.display = 'none';
   root!.style.opacity = '0';
 
-  const result = preLoad(ReactDOM, root, <BrowserRouter><App /></BrowserRouter>);
-
-  it('Should return a HTML div with id "root":', () => {
-    expect(result).toBe(root);
-  });
-
-  it('Should "root" have display equal "none":', () => {
+  it('1 - Should "root" have display equal "none":', () => {
     expect(root!.style.display).toBe('none');
   });
-  it('Should "root" have opacity equal "0":', () => {
+  it('2 - Should "root" have opacity equal "0":', () => {
     expect(root!.style.opacity).toBe('0');
   });
-  it('Should "root" have opacity equal "1" when 1.5 seconds pass:', async () => {
+  it('3 - Should return a HTML div with id "root":', () => {
+    const result = preLoad(ReactDOM, root, <BrowserRouter><App /></BrowserRouter>);
+    expect(result).toBe(root);
+  });
+  it('4 - Should "root" have opacity equal "1" when 1.5 seconds pass:', async () => {
     await timer(root);
     await new Promise<void>((resolve) => setTimeout(() => resolve(), 1500));
     expect(root!.style.opacity).toBe('1');
   });
-  it('Should "root" have display equal "flex" when 0.3 seconds pass:', async () => {
+  it('5 - Should "root" have display equal "flex" when 0.3 seconds pass:', async () => {
     await timer(root);
     await new Promise<void>((resolve) => setTimeout(() => resolve(), 300));
     expect(root!.style.display).toBe('flex');
   });
 
-  it('Should change display and opacity of root element after a time:', async () => {
+  it('7 - Should change display and opacity of root element after a time:', async () => {
     const rootMock = await fixture('<div id="root" style="display: none; opacity: 0;"></div>') as HTMLElement;
     timer(rootMock);
     await new Promise<void>((resolve) => setTimeout(() => resolve(), 1500));
