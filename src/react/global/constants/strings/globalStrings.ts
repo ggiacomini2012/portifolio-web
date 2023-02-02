@@ -12,6 +12,7 @@ const globalStrings: Interface.IAllStrings = {
     portifolio: 'portifolio',
     notFound: 'notFound',
   },
+  randomAnswer: 'The language selected is nether english nor portuguese. A língua selecionada não é português nem inglês',
   developerName: 'Guilherme Giacomini Teixeira.',
   english: {
     intro: "Hi, I'm Guilherme Giacomini Teixeira, full stack web developer.",

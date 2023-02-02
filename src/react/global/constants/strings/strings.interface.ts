@@ -29,7 +29,11 @@ interface IDeveloper {
   developerName: string
 }
 
-interface IAllStrings extends IColorTheme, IAllLanguages, IDeveloper {}
+interface IExceptions {
+  randomAnswer: string
+}
+
+interface IAllStrings extends IColorTheme, IAllLanguages, IDeveloper, IExceptions {}
 
 export type {
   IAllLanguages, ITexts, IAllColorThemes, IAllStrings, IColorTheme,
