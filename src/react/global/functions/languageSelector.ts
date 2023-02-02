@@ -1,6 +1,5 @@
 import globalStrings from '../constants/strings/globalStrings';
 import * as Interface from '../constants/strings/strings.interface';
-import functions from '.';
 
 const queryLanguageText = (
   language: keyof Interface.IAllLanguages,
@@ -13,7 +12,7 @@ const selectLanguage = (selectedLanguage: any, selectedText: any) => {
   if (language === 'english' || language === 'português') {
     return queryLanguageText(language, text);
   }
-  return functions.translator(language, text);
+  return 'The language selected is nether english nor portuguese. A língua selecionada não é português nem inglês';
 };
 
 export default selectLanguage;
