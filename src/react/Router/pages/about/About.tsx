@@ -26,10 +26,10 @@ function About() {
     <>
       <Header />
       <main id="about" data-testid="about" className={`about${theme} fade-in`}>
-        <h1 className={`about-myself${theme}`}>
+        <h1 className={`about-myself${theme}`} data-testid="about-myself">
           {translator(globalStrings.text.aboutDescription)}
         </h1>
-        <img src={programmer} alt="programer working" className={`about-picture${theme}`} />
+        <img src={programmer} data-testid="about-picture" alt="programer working" className={`about-picture${theme}`} />
       </main>
       <Footer />
     </>
