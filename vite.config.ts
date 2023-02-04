@@ -12,6 +12,7 @@ export default defineConfig({
   },
   server: { host: true },
   test: {
+    exclude: ['react/templates/page/template.test.tsx' ],
     globals: true,
     setupFiles: '../setupTests.ts',
     reporters: 'verbose',
