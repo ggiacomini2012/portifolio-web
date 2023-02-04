@@ -16,7 +16,7 @@ function About() {
   const [themeState] = useSelector(useColorTheme);
 
   const theme = functions.colorThemeSelector(themeState.colorTheme);
-  const translator = (text: any) => functions.languageSelector(languageState.toTranlate, text);
+  const translator = (text: any) => functions.languageSelector(languageState.toTranslate, text);
 
   useEffect(() => {
     functions.fadeIn('about');
@@ -29,7 +29,12 @@ function About() {
         <h1 className={`about-myself${theme}`} data-testid="about-myself">
           {translator(globalStrings.text.aboutDescription)}
         </h1>
-        <img src={programmer} data-testid="about-picture" alt="programer working" className={`about-picture${theme}`} />
+        <img
+          src={programmer}
+          data-testid="about-picture"
+          alt="programer working"
+          className={`about-picture${theme}`}
+        />
       </main>
       <Footer />
     </>

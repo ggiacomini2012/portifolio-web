@@ -16,22 +16,37 @@ function Header() {
   const [themeState] = useSelector(useColorTheme);
 
   const theme = functions.colorThemeSelector(themeState.colorTheme);
-  const translator = (text: any) => functions.languageSelector(languageState.toTranlate, text);
+  const translator = (text: any) => functions.languageSelector(languageState.toTranslate, text);
 
   return (
     <header id="header" data-testid="header" className={`header${theme}`}>
-      <button data-testid="home-button" className={`home-button${theme}`} type="button" onClick={() => goTo('/')}>
+      <button
+        data-testid="home-button"
+        className={`home-button${theme}`}
+        type="button"
+        onClick={() => goTo('/')}
+      >
         {translator(globalStrings.text.home)}
       </button>
-      <button data-testid="about-button" className={`about-button${theme}`} type="button" onClick={() => goTo('/about')}>
+      <button
+        data-testid="about-button"
+        className={`about-button${theme}`}
+        type="button"
+        onClick={() => goTo('/about')}
+      >
         {translator(globalStrings.text.about)}
       </button>
-      <button data-testid="contact-button" className={`contact-button${theme}`} type="button" onClick={() => goTo('/contact')}>
+      <button
+        data-testid="contact-button"
+        className={`contact-button${theme}`}
+        type="button"
+        onClick={() => goTo('/contact')}
+      >
         {translator(globalStrings.text.contact)}
       </button>
       <select
         name="select"
-        value={languageState.toTranlate}
+        value={languageState.toTranslate}
         data-testid="select-language-button"
         className={`select-language${theme}`}
         onChange={(e) => dispatch(changeLanguage(e.target.value))}

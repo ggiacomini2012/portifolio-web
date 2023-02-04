@@ -18,7 +18,7 @@ function Contact() {
   const [themeState] = useSelector(useColorTheme);
 
   const theme = functions.colorThemeSelector(themeState.colorTheme);
-  const translator = (text: any) => functions.languageSelector(languageState.toTranlate, text);
+  const translator = (text: any) => functions.languageSelector(languageState.toTranslate, text);
 
   useEffect(() => {
     functions.fadeIn('contact');
@@ -31,13 +31,31 @@ function Contact() {
         <h1 className={`contact-intro${theme}`}>
           {translator(globalStrings.text.contactDescription)}
         </h1>
-        <a href="https://www.linkedin.com/in/guilhermegiacominidev/" data-testid="contact-icon-linkedin" target="_blank" rel="noreferrer" className={`contact-icon-link${theme}`}>
+        <a
+          href="https://www.linkedin.com/in/guilhermegiacominidev/"
+          data-testid="contact-icon-linkedin"
+          target="_blank"
+          rel="noreferrer"
+          className={`contact-icon-link${theme}`}
+        >
           <img src={linkedin} alt="programer linkedin" className={`contact-icon${theme}`} />
         </a>
-        <a href="https://www.instagram.com/guilhermegiacomini.dev/" data-testid="contact-icon-instagram" target="_blank" rel="noreferrer" className={`contact-icon-link${theme}`}>
+        <a
+          href="https://www.instagram.com/guilhermegiacomini.dev/"
+          data-testid="contact-icon-instagram"
+          target="_blank"
+          rel="noreferrer"
+          className={`contact-icon-link${theme}`}
+        >
           <img src={instagram} alt="programer instagram" className={`contact-icon${theme}`} />
         </a>
-        <a href="https://www.youtube.com/channel/UCROYQOCi1hugmsrRBz73U2A" data-testid="contact-icon-youtube" target="_blank" rel="noreferrer" className={`contact-icon-link${theme}`}>
+        <a
+          href="https://www.youtube.com/channel/UCROYQOCi1hugmsrRBz73U2A"
+          data-testid="contact-icon-youtube"
+          target="_blank"
+          rel="noreferrer"
+          className={`contact-icon-link${theme}`}
+        >
           <img src={youtube} alt="programer youtube" className={`contact-icon${theme}`} />
         </a>
       </main>

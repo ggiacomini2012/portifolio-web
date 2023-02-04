@@ -21,7 +21,7 @@ function Home() {
   const [themeState] = useSelector(useColorTheme);
 
   const theme = functions.colorThemeSelector(themeState.colorTheme);
-  const translator = (text: any) => functions.languageSelector(languageState.toTranlate, text);
+  const translator = (text: any) => functions.languageSelector(languageState.toTranslate, text);
 
   // homeVariables.translator = translator;
 
@@ -53,7 +53,9 @@ function Home() {
           data-testid="section-display-container-container"
           className={`section-display-container-container${theme}`}
         >
-          <div className={`portifolio${theme}`}>✣ {translator(globalStrings.text.portifolio)} ✣</div>
+          <div className={`portifolio${theme}`}>
+            ✣ {translator(globalStrings.text.portifolio)} ✣
+          </div>
           <div
             id="all-projects-display"
             data-testid="all-projects-display"

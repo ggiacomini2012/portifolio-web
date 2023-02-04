@@ -13,13 +13,25 @@ function Footer() {
   const [themeState] = useSelector(useColorTheme);
 
   const theme = functions.colorThemeSelector(themeState.colorTheme);
-  const translator = (text: any) => functions.languageSelector(languageState.toTranlate, text);
+  const translator = (text: any) => functions.languageSelector(languageState.toTranslate, text);
 
   return (
     <footer id="footer" data-testid="footer" className={`footer${theme}`}>
-      <a href="https://github.com/ggiacomini2012" data-testid="footer-link" target="_blank" rel="noreferrer" className={`footer-link${theme}`}>
+      <a
+        href="https://github.com/ggiacomini2012"
+        data-testid="footer-link"
+        target="_blank"
+        rel="noreferrer"
+        className={`footer-link${theme}`}
+      >
         © 2023 {translator(globalStrings.text.by)} {globalStrings.developerName}
-        <img id="github-icon" data-testid="footer-image" className={`github-icon${theme}`} alt="github Icon" src={githubIcon} />
+        <img
+          id="github-icon"
+          data-testid="footer-image"
+          className={`github-icon${theme}`}
+          alt="github Icon"
+          src={githubIcon}
+        />
       </a>
     </footer>
   );

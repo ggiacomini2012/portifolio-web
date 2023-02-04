@@ -1,12 +1,12 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 interface ILanguage {
-  toTranlate: string;
+  toTranslate: string;
 }
 
 const inicialState: ILanguage[] = [
   {
-    toTranlate: 'english',
+    toTranslate: 'english',
   },
 ];
 
@@ -15,8 +15,9 @@ const sliceLanguage = createSlice({
   initialState: inicialState,
   reducers: {
     changeLanguage(state, action: PayloadAction<string>) {
-      return state.map((stateElement) => (stateElement.toTranlate !== action.payload
-        ? { toTranlate: action.payload } : stateElement));
+      return state.map((stateElement) => (stateElement.toTranslate !== action.payload
+        ? { toTranslate: action.payload }
+        : stateElement));
     },
   },
 });
