@@ -1,30 +1,27 @@
 import { configureStore } from '@reduxjs/toolkit';
-import sliceColorTheme, { changeColorTheme } from '../slices/sliceColorTheme';
+import sliceLanguage, { changeLanguage } from '../slices/sliceLanguage';
 
-describe('Redux SliceColorTheme test:', () => {
+describe('Redux SliceLanguage test:', () => {
   let store: any;
 
   beforeEach(() => {
-    store = configureStore({ reducer: { sliceColorTheme } });
+    store = configureStore({ reducer: { sliceLanguage } });
   });
 
   it('1 - Should change the color theme when changeColorTheme action is dispatched:', () => {
-    store.dispatch(changeColorTheme());
+    store.dispatch(changeLanguage('português'));
     const state = store.getState();
-    const sliceColorThemeState = [{
-      chooseColorTheme: false,
-      colorTheme: 'lightMode',
+    const sliceLanguageState = [{
+      toTranslate: 'português',
     }];
-    expect(state.sliceColorTheme).toEqual(sliceColorThemeState);
+    expect(state.sliceLanguage).toEqual(sliceLanguageState);
   });
   it('2 - Should change back the color theme when changeColorTheme action is dispatched twice:', () => {
-    store.dispatch(changeColorTheme());
-    store.dispatch(changeColorTheme());
+    store.dispatch(changeLanguage('english'));
     const state = store.getState();
-    const sliceColorThemeState = [{
-      chooseColorTheme: true,
-      colorTheme: 'darkMode',
+    const sliceLanguageState = [{
+      toTranslate: 'english',
     }];
-    expect(state.sliceColorTheme).toEqual(sliceColorThemeState);
+    expect(state.sliceLanguage).toEqual(sliceLanguageState);
   });
 });
