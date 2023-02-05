@@ -31,7 +31,8 @@ adicionar scroll horizontal com uma flecha lateral que ao começar a scrollar de
 
 Atingir o coverage de 100% e fazer o E2E de todas as páginas no cypress
   test:
-    languageSelector
-    todos slices
-    
+    languageSelector ✅
+    todos slices ✅
+  cypress:
+    testar rotas, links, css color... 
 
