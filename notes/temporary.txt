@@ -33,4 +33,5 @@ Atingir o coverage de 100% e fazer o E2E de todas as páginas no cypress
   test:
     languageSelector
     todos slices
+    
 
