@@ -46,4 +46,8 @@ describe('Testing home portrait:', () => {
     cy.get('a').filter(dataTestId(id.contact_icon_youtube)).should('have.attr', 'href', 'https://www.youtube.com/channel/UCROYQOCi1hugmsrRBz73U2A')
     cy.get('a').filter(dataTestId(id.contact_icon_linkedin)).should('have.attr', 'href', 'https://www.linkedin.com/in/guilhermegiacominidev/')
   })
+
+  it(`6 - Should ${dataTestId(id.contact)} not have a attribute :`, () => {
+    cy.get(dataTestId(id.contact)).should('not.have.css', 'overflow-y', 'scroll')
+  })
 })

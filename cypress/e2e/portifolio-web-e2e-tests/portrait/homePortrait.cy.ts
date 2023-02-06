@@ -44,4 +44,13 @@ describe('Testing home portrait:', () => {
     cy.get(dataTestId(id.select_language_button)).select('português')
     cy.get(dataTestId(id.introduction)).contains('Olá, Guilherme Giacomini')
   })
+
+  it(`6 - Should ${dataTestId(id.home)} have a attribute :`, () => {
+    cy.get(dataTestId(id.home)).should('have.css', 'overflow-y', 'scroll')
+  })
+
+  it(`7 - Should ${dataTestId(id.all_projects_display)} have a attributes :`, () => {
+    cy.get(dataTestId(id.all_projects_display)).should('have.css', 'overflow-y', 'hidden')
+    cy.get(dataTestId(id.all_projects_display)).should('have.css', 'overflow-x', 'scroll')
+  })
 })

@@ -38,4 +38,9 @@ describe('Testing home portrait:', () => {
     cy.get(dataTestId('home')).find('h1')
     cy.get(dataTestId('home')).find('img')
   })
+
+  it(`6 - Should ${dataTestId(id.about)} have a attribute :`, () => {
+    cy.get(dataTestId(id.about)).should('have.css', 'overflow-x', 'scroll')
+    cy.get(dataTestId(id.about)).should('have.css', 'overflow-y', 'hidden')
+  })
 })
