@@ -5,15 +5,8 @@ describe('Testing home portrait:', () => {
  const dataTestId = (id: string): string => `[data-testid="${id}"]`;
 
   beforeEach(() => {
-    cy.viewport('iphone-6')
+    cy.viewport(1200, 800);
     cy.visit('/')
-    //this is for cypress render css (pointer: coarse) media query if needed
-    Cypress.automation("remote:debugger:protocol", {
-      command: 'Emulation.setTouchEmulationEnabled',
-      params: {
-        enabled: true
-      }
-    })
   })
 
   it('1 - Has home-dark class when initiated:', () => {

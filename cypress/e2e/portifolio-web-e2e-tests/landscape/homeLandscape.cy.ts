@@ -5,7 +5,7 @@ describe('Testing home portrait:', () => {
  const dataTestId = (id: string): string => `[data-testid="${id}"]`;
 
   beforeEach(() => {
-    cy.viewport('iphone-6')
+    cy.viewport('iphone-6', 'landscape')
     cy.visit('/')
     //this is for cypress render css (pointer: coarse) media query if needed
     Cypress.automation("remote:debugger:protocol", {
