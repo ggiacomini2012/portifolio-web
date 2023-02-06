@@ -6,7 +6,7 @@ interface ITexts {
   aboutDescription: string;
   contact: string;
   contactDescription: string;
-  portifolio: string;
+  portfolio: string;
   notFound: string;
 }
 
@@ -22,15 +22,15 @@ interface IAllColorThemes {
 }
 
 interface IColorTheme {
-  colorTheme: IAllColorThemes
+  colorTheme: IAllColorThemes;
 }
 
 interface IDeveloper {
-  developerName: string
+  developerName: string;
 }
 
 interface IExceptions {
-  randomAnswer: string
+  randomAnswer: string;
 }
 
 interface IAllStrings extends IColorTheme, IAllLanguages, IDeveloper, IExceptions {}

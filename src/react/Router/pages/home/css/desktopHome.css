@@ -102,8 +102,8 @@
 
 	.section-display-container-container-light {}
 
-	.portifolio-dark,
-	.portifolio-light {
+	.portfolio-dark,
+	.portfolio-light {
 		width: 100vw;
 		display: flex;
 		flex-direction: column;
@@ -115,7 +115,7 @@
 		color: var(--10-dark-theme);
 	}
 
-	.portifolio-light {
+	.portfolio-light {
 		color: var(--10-light-theme);
 	}
 

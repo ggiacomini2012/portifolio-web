@@ -53,9 +53,7 @@ function Home() {
           data-testid="section-display-container-container"
           className={`section-display-container-container${theme}`}
         >
-          <div className={`portifolio${theme}`}>
-            ✣ {translator(globalStrings.text.portifolio)} ✣
-          </div>
+          <div className={`portfolio${theme}`}>✣ {translator(globalStrings.text.portfolio)} ✣</div>
           <div
             id="all-projects-display"
             data-testid="all-projects-display"
