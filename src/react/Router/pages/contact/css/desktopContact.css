@@ -1,7 +1,7 @@
 @media (hover: hover) {
 
-	.contact-container-dark,
-	.contact-container-light {
+	.contact-dark,
+	.contact-light {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
@@ -15,7 +15,7 @@
 		box-sizing: border-box;
 	}
 
-	.contact-container-light {
+	.contact-light {
 		background-color: var(--60-light-theme);
 	}
 

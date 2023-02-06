@@ -27,7 +27,7 @@ function Contact() {
   return (
     <>
       <Header />
-      <main id="contact" data-testid="contact" className={`contact-container${theme} fade-in`}>
+      <main id="contact" data-testid="contact" className={`contact${theme} fade-in`}>
         <h1 className={`contact-intro${theme}`}>
           {translator(globalStrings.text.contactDescription)}
         </h1>
