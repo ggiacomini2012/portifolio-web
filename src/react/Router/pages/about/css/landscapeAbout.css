@@ -1,8 +1,5 @@
 @media (min-aspect-ratio: 13/9),
-(orientation: landscape)
-
-/* AND (pointer: coarse)  */
-	{
+(orientation: landscape) {
 
 	.about-dark,
 	.about-light {
