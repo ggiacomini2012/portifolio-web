@@ -14,7 +14,8 @@
 		transition: all ease-in-out 0.5s;
 		opacity: 0;
 		box-sizing: border-box;
-		overflow-y: scroll;
+		overflow-x: scroll;
+    overflow-y: hidden;
 	}
 
 	.home-light {

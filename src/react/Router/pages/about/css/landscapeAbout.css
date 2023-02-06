@@ -14,7 +14,8 @@
 		opacity: 0;
 		transition: all 0.5s ease-in-out;
 		box-sizing: border-box;
-		overflow-y: scroll;
+		overflow-x: scroll;
+    overflow-y: hidden;
 	}
 
 	.about-light {
