@@ -14,7 +14,8 @@
     "prettier:fix": "prettier --write .",
     "test": "vitest --no-watch",
     "test:cover": "vitest --coverage --no-watch",
-    "test:cypress": "cypress open"
+    "test:cypress": "cypress run",
+    "test:cypress:open": "cypress open"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.1",
