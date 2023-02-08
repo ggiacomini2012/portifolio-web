@@ -34,5 +34,7 @@ Atingir o coverage de 100% e fazer o E2E de todas as páginas no cypress
     languageSelector ✅
     todos slices ✅
   cypress:
-    testar rotas, links, css color... 
+    testar rotas, links, css color... ✅
+
+Fazer o README
 
