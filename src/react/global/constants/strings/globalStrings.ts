@@ -53,6 +53,19 @@ const globalStrings: Interface.IAllStrings = {
     portfolio: 'PORTFOLIO',
     notFound: 'URL no encontrada',
   },
+  中文: {
+    intro: '你好，Guilherme Giacomini Teixeira，全栈Web开发人员。',
+    by: '由',
+    home: '家',
+    about: '关于',
+    aboutDescription:
+      '我是一名前端和后端开发人员。我住在南美洲的Balneário Camboriú - SC。我喜欢使用UI工作。我专注于创建解决方案，培养良好的个人组织能力，并对细节非常重视。我在空闲时间创作音乐，散步，喜欢和朋友聚在一起喝咖啡聊天。我的英语和葡萄牙语流利。',
+    contact: '联系',
+    contactDescription:
+      '如果你喜欢我的作品，请通过以下渠道联系我：',
+    portfolio: '作品集',
+    notFound: '找不到网址',
+  },
   colorTheme: {
     darkMode: '-dark',
     lightMode: '-light',
