@@ -9,10 +9,10 @@ const queryLanguageText = (
 const selectLanguage = (selectedLanguage: any, selectedText: any) => {
   const language = selectedLanguage as unknown as keyof Interface.IAllLanguages;
   const text = selectedText as keyof Interface.ITexts;
-  if (language === 'english' || language === 'português') {
+  if (language === 'english' || language === 'português' || language === 'español') {
     return queryLanguageText(language, text);
   }
-  return 'The language selected is nether english nor portuguese. A língua selecionada não é português nem inglês';
+  return 'The language selected is neither English nor Portuguese or Spanish. A língua selecionada não é nem inglês nem português nem espanhol.';
 };
 
 export default selectLanguage;

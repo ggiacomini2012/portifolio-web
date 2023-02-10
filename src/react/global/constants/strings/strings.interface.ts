@@ -14,6 +14,7 @@ interface IAllLanguages {
   text: ITexts;
   english: ITexts;
   português: ITexts;
+  español: ITexts;
 }
 
 interface IAllColorThemes {

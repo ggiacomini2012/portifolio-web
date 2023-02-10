@@ -53,6 +53,7 @@ function Header() {
       >
         <option value="english">english</option>
         <option value="português">português</option>
+        <option value="español">español</option>
       </select>
       <ColorTheme />
     </header>
