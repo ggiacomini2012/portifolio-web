@@ -34,7 +34,7 @@ const globalStrings: Interface.IAllStrings = {
     about: 'sobre',
     aboutDescription:
       'Sou um desenvolvedor Front e Back. Moro em Balneário Camboriú - SC. Gosto muito de trabalhar com UI. Mantenho o foco em criar soluções, cultivo uma boa organização pessoal e presto muita atenção aos detalhes. Crio músicas nas horas vagas, caminho, curto me reunir com amigos para tomar café e prosear. Tenho fluência no inglês e espanhol',
-    contact: 'contacto',
+    contact: 'contato',
     contactDescription:
       'Se você gostou do meu trabalho me contacte através de algum destes canais:',
     portfolio: 'PORTFÓLIO',
