@@ -36,5 +36,6 @@ Atingir o coverage de 100% e fazer o E2E de todas as páginas no cypress
   cypress:
     testar rotas, links, css color... ✅
 
-Fazer o README
+Fazer o README 
 
+Refatorar os nomes (ex.: dataTestId('about') dataTestId(id.about)) nos tests do Cypress
